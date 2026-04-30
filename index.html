@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0049)file:///Users/andrewoxley/Downloads/index_10.html -->
+<!-- saved from url=(0049)file:///Users/andrewoxley/Downloads/index_12.html -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -326,8 +326,8 @@ body{font-family:'Lato',sans-serif;background:var(--cream);color:var(--text);min
   <div class="countdown" id="countdown">
     <div class="cd-unit"><span class="cd-num" id="cd-days">386</span><span class="cd-lbl">Days</span></div>
     <div class="cd-unit"><span class="cd-num" id="cd-hours">20</span><span class="cd-lbl">Hours</span></div>
-    <div class="cd-unit"><span class="cd-num" id="cd-mins">48</span><span class="cd-lbl">Minutes</span></div>
-    <div class="cd-unit"><span class="cd-num" id="cd-secs">44</span><span class="cd-lbl">Seconds</span></div>
+    <div class="cd-unit"><span class="cd-num" id="cd-mins">41</span><span class="cd-lbl">Minutes</span></div>
+    <div class="cd-unit"><span class="cd-num" id="cd-secs">59</span><span class="cd-lbl">Seconds</span></div>
   </div>
 </header>
 
@@ -1782,6 +1782,9 @@ function setupCloudListeners() {
     if (!snap.exists) return;
     const d = snap.data();
     if (d._tab === MY_TAB) return;
+    const financeUnlocked = document.getElementById('finance-content') && 
+                            document.getElementById('finance-content').classList.contains('unlocked');
+    if (financeUnlocked) return; // don't overwrite while user is editing
     applyCloudData(d);
     refreshFinance();
   }, e => console.warn('Finance listener err:', e));
@@ -2252,26 +2255,26 @@ function saveFinance() {
   const notesEl = document.getElementById('fin-notes');
   if (notesEl) finNotes = notesEl.value;
   localStorage.setItem('we_finance', JSON.stringify({payments, budget:finBudget, notes:finNotes}));
-  renderFinanceSummary();
-  pushFinance();
+  updateFinanceStats();
+  setTimeout(pushFinance, 100);
 }
 
-function renderFinanceSummary() {
+function updateFinanceStats() {
   const fmt = n => '$' + Math.abs(parseFloat(n)||0).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});
-
   let committed = 0, totalPaid = 0;
   for (const p of payments) {
     committed += parseFloat(p.amount) || 0;
     totalPaid += parseFloat(p.paid)   || 0;
   }
   const remaining = committed - totalPaid;
+  const b = document.getElementById('fin-total-budget'); if(b) b.textContent = finBudget > 0 ? fmt(finBudget) : '—';
+  const c = document.getElementById('fin-committed');    if(c) c.textContent = fmt(committed);
+  const p = document.getElementById('fin-paid');         if(p) p.textContent = fmt(totalPaid);
+  const r = document.getElementById('fin-remaining');    if(r) r.textContent = fmt(remaining);
+}
 
-  const setEl = (id, val) => { const el = document.getElementById(id); if (el) el.textContent = val; };
-  setEl('fin-total-budget', finBudget > 0 ? fmt(finBudget) : '—');
-  setEl('fin-committed',    fmt(committed));
-  setEl('fin-paid',         fmt(totalPaid));
-  setEl('fin-remaining',    fmt(remaining));
-
+function renderFinanceSummary() {
+  updateFinanceStats();
   const bEl = document.getElementById('fin-budget-input');
   if (bEl && finBudget > 0 && !bEl.value) bEl.value = finBudget;
   const nEl = document.getElementById('fin-notes');
