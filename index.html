@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0048)file:///Users/andrewoxley/Downloads/index_4.html -->
+<!-- saved from url=(0048)file:///Users/andrewoxley/Downloads/index_6.html -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -320,14 +320,14 @@ body{font-family:'Lato',sans-serif;background:var(--cream);color:var(--text);min
   <div class="header-sub">Saturday · May 22, 2027</div>
   <div class="header-venue">⛳ The Georgia Club · Statham, GA</div>
   <div style="display:flex;align-items:center;justify-content:center;gap:10px;margin-top:5px;">
-    <div id="sync-status" style="font-size:.62em;color:rgba(255,255,255,.45);letter-spacing:1px;">☁️ Synced · 02:46 PM</div>
+    <div id="sync-status" style="font-size:.62em;color:rgba(255,255,255,.45);letter-spacing:1px;">☁️ Synced · 02:52 PM</div>
     <button onclick="pushShared();pushFinance();setSyncStatus(&#39;☁️ Pushed!&#39;)" title="Force sync to cloud" style="background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:rgba(255,255,255,.6);border-radius:6px;padding:2px 8px;font-size:.6em;cursor:pointer;letter-spacing:.5px;">↑ Sync</button>
   </div>
   <div class="countdown" id="countdown">
     <div class="cd-unit"><span class="cd-num" id="cd-days">386</span><span class="cd-lbl">Days</span></div>
     <div class="cd-unit"><span class="cd-num" id="cd-hours">21</span><span class="cd-lbl">Hours</span></div>
-    <div class="cd-unit"><span class="cd-num" id="cd-mins">12</span><span class="cd-lbl">Minutes</span></div>
-    <div class="cd-unit"><span class="cd-num" id="cd-secs">20</span><span class="cd-lbl">Seconds</span></div>
+    <div class="cd-unit"><span class="cd-num" id="cd-mins">07</span><span class="cd-lbl">Minutes</span></div>
+    <div class="cd-unit"><span class="cd-num" id="cd-secs">06</span><span class="cd-lbl">Seconds</span></div>
   </div>
 </header>
 
@@ -1785,12 +1785,12 @@ function setSyncStatus(msg) {
   if (el) el.textContent = msg;
 }
 
-// Grab all shared ma_* keys from localStorage (excludes finance)
+// Grab all shared keys from localStorage (excludes finance)
 function getSharedSnap() {
   const d = { _tab: MY_TAB };
   for (let i = 0; i < localStorage.length; i++) {
     const k = localStorage.key(i);
-    if (k && k.startsWith('ma_') && k !== 'we_finance' && k !== 'we_fv') {
+    if (k && (k.startsWith('ma_') || k.startsWith('we_')) && k !== 'we_finance' && k !== 'we_fv') {
       d[k] = localStorage.getItem(k);
     }
   }
@@ -1807,8 +1807,8 @@ function pushShared() {
 function pushFinance() {
   if (!cloudSyncEnabled) return;
   FINANCE_DOC.set({
-    ma_finance: localStorage.getItem('we_finance') || '',
-    ma_fv: localStorage.getItem('we_fv') || '2',
+    we_finance: localStorage.getItem('we_finance') || '',
+    we_fv: localStorage.getItem('we_fv') || '2',
     _tab: MY_TAB
   }).catch(e => console.warn('Finance sync err:', e));
 }
@@ -1816,7 +1816,7 @@ function pushFinance() {
 // Apply cloud doc fields back into localStorage
 function applyCloudData(data) {
   Object.keys(data).forEach(k => {
-    if (k.startsWith('ma_') && data[k] != null) localStorage.setItem(k, data[k]);
+    if ((k.startsWith('ma_') || k.startsWith('we_')) && data[k] != null) localStorage.setItem(k, data[k]);
   });
 }
 
