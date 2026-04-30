@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
+<!-- saved from url=(0048)file:///Users/andrewoxley/Downloads/index_1.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>💍 Will &amp; Ella — May 22, 2027</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<link href="./💍 Will &amp; Ella — May 22, 2027_files/css2" rel="stylesheet">
 <style>
 :root {
   --orange: #D63384;
@@ -306,8 +306,8 @@ body{font-family:'Lato',sans-serif;background:var(--cream);color:var(--text);min
 .calc-result{font-weight:700;color:var(--orange);font-size:1em;min-width:80px;}
 </style>
   <!-- Firebase SDK (compat) -->
-  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
+  <script src="./💍 Will &amp; Ella — May 22, 2027_files/firebase-app-compat.js"></script>
+  <script src="./💍 Will &amp; Ella — May 22, 2027_files/firebase-firestore-compat.js"></script>
 </head>
 <body>
 
@@ -320,14 +320,14 @@ body{font-family:'Lato',sans-serif;background:var(--cream);color:var(--text);min
   <div class="header-sub">Saturday · May 22, 2027</div>
   <div class="header-venue">⛳ The Georgia Club · Statham, GA</div>
   <div style="display:flex;align-items:center;justify-content:center;gap:10px;margin-top:5px;">
-    <div id="sync-status" style="font-size:.62em;color:rgba(255,255,255,.45);letter-spacing:1px;">⏳ Connecting...</div>
-    <button onclick="pushShared();pushFinance();setSyncStatus('☁️ Pushed!')" title="Force sync to cloud" style="background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:rgba(255,255,255,.6);border-radius:6px;padding:2px 8px;font-size:.6em;cursor:pointer;letter-spacing:.5px;">↑ Sync</button>
+    <div id="sync-status" style="font-size:.62em;color:rgba(255,255,255,.45);letter-spacing:1px;">☁️ Synced · 02:29 PM</div>
+    <button onclick="pushShared();pushFinance();setSyncStatus(&#39;☁️ Pushed!&#39;)" title="Force sync to cloud" style="background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:rgba(255,255,255,.6);border-radius:6px;padding:2px 8px;font-size:.6em;cursor:pointer;letter-spacing:.5px;">↑ Sync</button>
   </div>
   <div class="countdown" id="countdown">
-    <div class="cd-unit"><span class="cd-num" id="cd-days">--</span><span class="cd-lbl">Days</span></div>
-    <div class="cd-unit"><span class="cd-num" id="cd-hours">--</span><span class="cd-lbl">Hours</span></div>
-    <div class="cd-unit"><span class="cd-num" id="cd-mins">--</span><span class="cd-lbl">Minutes</span></div>
-    <div class="cd-unit"><span class="cd-num" id="cd-secs">--</span><span class="cd-lbl">Seconds</span></div>
+    <div class="cd-unit"><span class="cd-num" id="cd-days">386</span><span class="cd-lbl">Days</span></div>
+    <div class="cd-unit"><span class="cd-num" id="cd-hours">21</span><span class="cd-lbl">Hours</span></div>
+    <div class="cd-unit"><span class="cd-num" id="cd-mins">30</span><span class="cd-lbl">Minutes</span></div>
+    <div class="cd-unit"><span class="cd-num" id="cd-secs">06</span><span class="cd-lbl">Seconds</span></div>
   </div>
 </header>
 
@@ -335,14 +335,14 @@ body{font-family:'Lato',sans-serif;background:var(--cream);color:var(--text);min
 <!--  TAB NAVIGATION                                         -->
 <!-- ═══════════════════════════════════════════════════════ -->
 <nav class="tab-nav" role="tablist">
-  <button class="tab-btn active" onclick="showTab('dashboard')" id="tb-dashboard">🏠 Dashboard</button>
-  <button class="tab-btn" onclick="showTab('checklist')" id="tb-checklist">✅ Checklist</button>
-  <button class="tab-btn" onclick="showTab('venue')" id="tb-venue">🏡 Venue</button>
-  <button class="tab-btn" onclick="showTab('guests')" id="tb-guests">👥 Guest List</button>
-  <button class="tab-btn" onclick="showTab('schedule')" id="tb-schedule">📅 Weekend</button>
-  <button class="tab-btn" onclick="showTab('hotel')" id="tb-hotel">🏨 Hotel Block</button>
-  <button class="tab-btn" onclick="showTab('vendors')" id="tb-vendors">📋 Vendors</button>
-  <button class="tab-btn" onclick="showTab('finance')" id="tb-finance" title="Finances">🐶</button>
+  <button class="tab-btn active" onclick="showTab(&#39;dashboard&#39;)" id="tb-dashboard">🏠 Dashboard</button>
+  <button class="tab-btn" onclick="showTab(&#39;checklist&#39;)" id="tb-checklist">✅ Checklist</button>
+  <button class="tab-btn" onclick="showTab(&#39;venue&#39;)" id="tb-venue">🏡 Venue</button>
+  <button class="tab-btn" onclick="showTab(&#39;guests&#39;)" id="tb-guests">👥 Guest List</button>
+  <button class="tab-btn" onclick="showTab(&#39;schedule&#39;)" id="tb-schedule">📅 Weekend</button>
+  <button class="tab-btn" onclick="showTab(&#39;hotel&#39;)" id="tb-hotel">🏨 Hotel Block</button>
+  <button class="tab-btn" onclick="showTab(&#39;vendors&#39;)" id="tb-vendors">📋 Vendors</button>
+  <button class="tab-btn" onclick="showTab(&#39;finance&#39;)" id="tb-finance" title="Finances">🐶</button>
 </nav>
 
 <!-- ═══════════════════════════════════════════════════════ -->
@@ -352,12 +352,12 @@ body{font-family:'Lato',sans-serif;background:var(--cream);color:var(--text);min
 
   <!-- Key Stats -->
   <div class="stats-grid" id="dash-stats">
-    <div class="stat o"><span class="stat-n" id="ds-days">--</span><span class="stat-l">Days to Go</span></div>
-    <div class="stat p"><span class="stat-n" id="ds-confirmed">--</span><span class="stat-l">Confirmed Guests</span></div>
-    <div class="stat g"><span class="stat-n" id="ds-invited">--</span><span class="stat-l">Total Invited</span></div>
-    <div class="stat p"><span class="stat-n" id="ds-tasks">--</span><span class="stat-l">Tasks Done</span></div>
-    <div class="stat o"><span class="stat-n" id="ds-ty">--</span><span class="stat-l">Thank-You's Sent</span></div>
-    <div class="stat"><span class="stat-n" id="ds-unknown">--</span><span class="stat-l">Still Need RSVP</span></div>
+    <div class="stat o"><span class="stat-n" id="ds-days">386</span><span class="stat-l">Days to Go</span></div>
+    <div class="stat p"><span class="stat-n" id="ds-confirmed">0</span><span class="stat-l">Confirmed Guests</span></div>
+    <div class="stat g"><span class="stat-n" id="ds-invited">4</span><span class="stat-l">Total Invited</span></div>
+    <div class="stat p"><span class="stat-n" id="ds-tasks">2/88</span><span class="stat-l">Tasks Done</span></div>
+    <div class="stat o"><span class="stat-n" id="ds-ty">0</span><span class="stat-l">Thank-You's Sent</span></div>
+    <div class="stat"><span class="stat-n" id="ds-unknown">4</span><span class="stat-l">Still Need RSVP</span></div>
   </div>
 
   <!-- Guest Side Split -->
@@ -366,22 +366,22 @@ body{font-family:'Lato',sans-serif;background:var(--cream);color:var(--text);min
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
       <div style="background:var(--purple-light);border-radius:12px;padding:18px;text-align:center;">
         <div style="font-size:2em;margin-bottom:4px;">🌸</div>
-        <div style="font-family:'Playfair Display',serif;font-size:2em;color:var(--purple);" id="ds-ella-ct">--</div>
+        <div style="font-family:&#39;Playfair Display&#39;,serif;font-size:2em;color:var(--purple);" id="ds-ella-ct">0</div>
         <div style="font-size:.8em;text-transform:uppercase;letter-spacing:1.5px;color:var(--text-light);margin-top:4px;">Ella's Responses (Oxley)</div>
         <div style="font-size:.78em;color:var(--text-light);margin-top:4px;" id="ds-ella-pct"></div>
       </div>
       <div style="background:var(--orange-light);border-radius:12px;padding:18px;text-align:center;">
         <div style="font-size:2em;margin-bottom:4px;">🏈</div>
-        <div style="font-family:'Playfair Display',serif;font-size:2em;color:var(--orange-dark);" id="ds-will-ct">--</div>
+        <div style="font-family:&#39;Playfair Display&#39;,serif;font-size:2em;color:var(--orange-dark);" id="ds-will-ct">0</div>
         <div style="font-size:.8em;text-transform:uppercase;letter-spacing:1.5px;color:var(--text-light);margin-top:4px;">Will's Responses (Farmer)</div>
         <div style="font-size:.78em;color:var(--text-light);margin-top:4px;" id="ds-will-pct"></div>
       </div>
     </div>
     <div style="margin-top:14px;">
       <div style="font-size:.8em;color:var(--text-light);margin-bottom:5px;">Venue capacity: <strong>150 included</strong></div>
-      <div id="vp-extra-summary" style="font-size:.85em;padding:8px 12px;border-radius:8px;margin-bottom:6px;background:var(--orange-light);color:var(--orange-dark);font-weight:600;display:none;"></div>
-      <div class="progress-wrap"><div class="progress-fill" id="ds-cap-bar" style="width:0%"></div></div>
-      <div style="font-size:.78em;color:var(--text-light);margin-top:4px;" id="ds-cap-lbl"></div>
+      <div id="vp-extra-summary" style="font-size: 0.85em; padding: 8px 12px; border-radius: 8px; margin-bottom: 6px; background: var(--success-bg); color: var(--success); font-weight: 600; display: block;">👥 4 invited · 0 accepted · within the 150 included ✓</div>
+      <div class="progress-wrap"><div class="progress-fill" id="ds-cap-bar" style="width: 3%;"></div></div>
+      <div style="font-size:.78em;color:var(--text-light);margin-top:4px;" id="ds-cap-lbl">4 invited · within 150 included ✓</div>
     </div>
   </div>
 
@@ -396,7 +396,7 @@ body{font-family:'Lato',sans-serif;background:var(--cream);color:var(--text);min
       </div>
       <div class="pay-alert-amt" style="color:var(--warning);">Get Started →</div>
     </div>
-    <div id="dash-pay-progress" style="margin:10px 0 6px;"></div>
+    <div id="dash-pay-progress" style="margin:10px 0 6px;"><div style="font-size:.82em;color:var(--text-light);margin-bottom:5px;">Vendors with amounts set: <strong>0/18</strong> · Payments marked paid: <strong>0</strong></div></div>
   </div>
 
   <!-- Quick Checklist Preview -->
@@ -404,12 +404,12 @@ body{font-family:'Lato',sans-serif;background:var(--cream);color:var(--text);min
     <div class="card-title">✅ Planning Progress <small>· click Checklist tab for full list</small></div>
     <div class="progress-row">
       <div class="progress-label">Overall</div>
-      <div class="progress-wrap" style="flex:1"><div class="progress-fill" id="ds-prog-bar" style="width:0%"></div></div>
-      <div class="progress-pct" id="ds-prog-pct">0%</div>
+      <div class="progress-wrap" style="flex:1"><div class="progress-fill" id="ds-prog-bar" style="width: 2%;"></div></div>
+      <div class="progress-pct" id="ds-prog-pct">2%</div>
     </div>
-    <div id="dash-checklist-preview"></div>
+    <div id="dash-checklist-preview"><div class="chk-item"><input type="checkbox" onchange="toggleCheck(&#39;c2&#39;,this.checked)"><label>Book venue</label></div><div class="chk-item"><input type="checkbox" onchange="toggleCheck(&#39;c4&#39;,this.checked)"><label>Set overall wedding budget</label></div><div class="chk-item"><input type="checkbox" onchange="toggleCheck(&#39;c5&#39;,this.checked)"><label>Announce engagement</label></div><div class="chk-item"><input type="checkbox" onchange="toggleCheck(&#39;c6&#39;,this.checked)"><label>Create engagement announcement / social media post</label></div><div class="chk-item"><input type="checkbox" onchange="toggleCheck(&#39;c7&#39;,this.checked)"><label>Choose wedding colors &amp; overall theme</label></div></div>
     <div style="margin-top:12px;">
-      <button class="btn btn-outline btn-sm" onclick="showTab('checklist')">View Full Checklist →</button>
+      <button class="btn btn-outline btn-sm" onclick="showTab(&#39;checklist&#39;)">View Full Checklist →</button>
     </div>
   </div>
 
@@ -442,8 +442,8 @@ body{font-family:'Lato',sans-serif;background:var(--cream);color:var(--text);min
     <div class="card-title">✅ Wedding Planning Checklist</div>
     <div class="progress-row">
       <div class="progress-label">Progress</div>
-      <div class="progress-wrap" style="flex:1"><div class="progress-fill" id="chk-prog-bar" style="width:0%"></div></div>
-      <div class="progress-pct" id="chk-prog-pct">0%</div>
+      <div class="progress-wrap" style="flex:1"><div class="progress-fill" id="chk-prog-bar" style="width: 2%;"></div></div>
+      <div class="progress-pct" id="chk-prog-pct">2%</div>
     </div>
     <p class="card-note">Check items off as you go — progress saves automatically in your browser.</p>
   </div>
@@ -452,7 +452,28 @@ body{font-family:'Lato',sans-serif;background:var(--cream);color:var(--text);min
   <div class="card">
     <div class="tl-section">
       <div class="tl-title">🎊 Foundation <span>18+ months before</span></div>
-      <div id="cl-foundation"></div>
+      <div id="cl-foundation"><div class="chk-item done">
+        <input type="checkbox" id="c1" checked="" onchange="toggleCheck(&#39;c1&#39;,this.checked)">
+        <label for="c1">Set wedding date ✅ May 22, 2027
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c2" onchange="toggleCheck(&#39;c2&#39;,this.checked)">
+        <label for="c2">Book venue<span class="chk-priority p-high">high</span>
+        </label></div><div class="chk-item done">
+        <input type="checkbox" id="c3" checked="" onchange="toggleCheck(&#39;c3&#39;,this.checked)">
+        <label for="c3">Start guest list
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c4" onchange="toggleCheck(&#39;c4&#39;,this.checked)">
+        <label for="c4">Set overall wedding budget<span class="chk-priority p-high">high</span>
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c5" onchange="toggleCheck(&#39;c5&#39;,this.checked)">
+        <label for="c5">Announce engagement
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c6" onchange="toggleCheck(&#39;c6&#39;,this.checked)">
+        <label for="c6">Create engagement announcement / social media post
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c7" onchange="toggleCheck(&#39;c7&#39;,this.checked)">
+        <label for="c7">Choose wedding colors &amp; overall theme
+        </label></div></div>
     </div>
   </div>
 
@@ -460,7 +481,37 @@ body{font-family:'Lato',sans-serif;background:var(--cream);color:var(--text);min
   <div class="card">
     <div class="tl-section">
       <div class="tl-title">📅 12 Months Out <span>by May 2026</span></div>
-      <div id="cl-12mo"></div>
+      <div id="cl-12mo"><div class="chk-item">
+        <input type="checkbox" id="c8" onchange="toggleCheck(&#39;c8&#39;,this.checked)">
+        <label for="c8">Book photographer<span class="chk-priority p-high">high</span><span class="chk-note">📌 Typically: deposit at signing, installments, balance 2 weeks prior</span>
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c9" onchange="toggleCheck(&#39;c9&#39;,this.checked)">
+        <label for="c9">Book officiant / minister<span class="chk-priority p-high">high</span>
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c10" onchange="toggleCheck(&#39;c10&#39;,this.checked)">
+        <label for="c10">Dress shopping — start visiting boutiques<span class="chk-priority p-high">high</span>
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c11" onchange="toggleCheck(&#39;c11&#39;,this.checked)">
+        <label for="c11">Book honeymoon destination
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c12" onchange="toggleCheck(&#39;c12&#39;,this.checked)">
+        <label for="c12">Confirm bridal party (bridesmaids &amp; groomsmen)
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c13" onchange="toggleCheck(&#39;c13&#39;,this.checked)">
+        <label for="c13">Book hair &amp; makeup artist
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c14" onchange="toggleCheck(&#39;c14&#39;,this.checked)">
+        <label for="c14">Consider booking videographer
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c15" onchange="toggleCheck(&#39;c15&#39;,this.checked)">
+        <label for="c15">Research rehearsal dinner venues
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c16" onchange="toggleCheck(&#39;c16&#39;,this.checked)">
+        <label for="c16">Plan Friday night post-rehearsal event idea
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c17" onchange="toggleCheck(&#39;c17&#39;,this.checked)">
+        <label for="c17">Order wedding rings / bands
+        </label></div></div>
     </div>
   </div>
 
@@ -468,7 +519,40 @@ body{font-family:'Lato',sans-serif;background:var(--cream);color:var(--text);min
   <div class="card">
     <div class="tl-section">
       <div class="tl-title">🌸 9 Months Out <span>by August 2026</span></div>
-      <div id="cl-9mo"></div>
+      <div id="cl-9mo"><div class="chk-item">
+        <input type="checkbox" id="c18" onchange="toggleCheck(&#39;c18&#39;,this.checked)">
+        <label for="c18">Create wedding website
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c19" onchange="toggleCheck(&#39;c19&#39;,this.checked)">
+        <label for="c19">Send save-the-dates
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c20" onchange="toggleCheck(&#39;c20&#39;,this.checked)">
+        <label for="c20">Book hotel room block(s)<span class="chk-priority p-high">high</span><span class="chk-note">📌 Aim for 6-12 months before the wedding</span>
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c21" onchange="toggleCheck(&#39;c21&#39;,this.checked)">
+        <label for="c21">Choose catering company<span class="chk-priority p-med">med</span>
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c22" onchange="toggleCheck(&#39;c22&#39;,this.checked)">
+        <label for="c22">Order bridesmaid dresses
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c23" onchange="toggleCheck(&#39;c23&#39;,this.checked)">
+        <label for="c23">Choose &amp; order groomsmen attire (suits/tuxes)
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c24" onchange="toggleCheck(&#39;c24&#39;,this.checked)">
+        <label for="c24">Create gift registry
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c25" onchange="toggleCheck(&#39;c25&#39;,this.checked)">
+        <label for="c25">Book rehearsal dinner venue
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c26" onchange="toggleCheck(&#39;c26&#39;,this.checked)">
+        <label for="c26">Plan honeymoon details &amp; book flights/hotels
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c27" onchange="toggleCheck(&#39;c27&#39;,this.checked)">
+        <label for="c27">Schedule custom decor appointment with venue coordinator<span class="chk-note">📌 Tablescapes, room layouts, ceremony selections</span>
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c28" onchange="toggleCheck(&#39;c28&#39;,this.checked)">
+        <label for="c28">Review floral options with florist
+        </label></div></div>
     </div>
   </div>
 
@@ -476,7 +560,46 @@ body{font-family:'Lato',sans-serif;background:var(--cream);color:var(--text);min
   <div class="card">
     <div class="tl-section">
       <div class="tl-title">💌 6 Months Out <span>by November 2026</span></div>
-      <div id="cl-6mo"></div>
+      <div id="cl-6mo"><div class="chk-item">
+        <input type="checkbox" id="c29" onchange="toggleCheck(&#39;c29&#39;,this.checked)">
+        <label for="c29">Design &amp; order wedding invitations
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c30" onchange="toggleCheck(&#39;c30&#39;,this.checked)">
+        <label for="c30">Photographer — 2nd payment due (check contract)<span class="chk-priority p-high">high</span>
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c31" onchange="toggleCheck(&#39;c31&#39;,this.checked)">
+        <label for="c31">Schedule cake tasting<span class="chk-note">📌 $750 allotment included</span>
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c32" onchange="toggleCheck(&#39;c32&#39;,this.checked)">
+        <label for="c32">Finalize rehearsal dinner plans &amp; guest list
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c33" onchange="toggleCheck(&#39;c33&#39;,this.checked)">
+        <label for="c33">Schedule hair &amp; makeup trial
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c34" onchange="toggleCheck(&#39;c34&#39;,this.checked)">
+        <label for="c34">Plan bridal shower
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c35" onchange="toggleCheck(&#39;c35&#39;,this.checked)">
+        <label for="c35">Plan bachelor &amp; bachelorette parties
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c36" onchange="toggleCheck(&#39;c36&#39;,this.checked)">
+        <label for="c36">Confirm DJ song preferences / do-not-play list
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c37" onchange="toggleCheck(&#39;c37&#39;,this.checked)">
+        <label for="c37">Select 3 signature cocktails for bar<span class="chk-priority p-med">med</span><span class="chk-note">📌 30-day courtesy call will create shopping list</span>
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c38" onchange="toggleCheck(&#39;c38&#39;,this.checked)">
+        <label for="c38">Decide on send-off option (fireworks/helicopter/getaway)<span class="chk-priority p-med">med</span>
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c39" onchange="toggleCheck(&#39;c39&#39;,this.checked)">
+        <label for="c39">Decide on dance floor style (checkered or outdoor)<span class="chk-priority p-med">med</span>
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c40" onchange="toggleCheck(&#39;c40&#39;,this.checked)">
+        <label for="c40">Choose marquee letter content (4 included)<span class="chk-priority p-med">med</span><span class="chk-note">📌 $50 per additional letter</span>
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c41" onchange="toggleCheck(&#39;c41&#39;,this.checked)">
+        <label for="c41">Order wedding favors (if desired)
+        </label></div></div>
     </div>
   </div>
 
@@ -484,7 +607,34 @@ body{font-family:'Lato',sans-serif;background:var(--cream);color:var(--text);min
   <div class="card">
     <div class="tl-section">
       <div class="tl-title">🎀 3 Months Out <span>by February 2027</span></div>
-      <div id="cl-3mo"></div>
+      <div id="cl-3mo"><div class="chk-item">
+        <input type="checkbox" id="c42" onchange="toggleCheck(&#39;c42&#39;,this.checked)">
+        <label for="c42">Mail wedding invitations<span class="chk-priority p-high">high</span>
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c43" onchange="toggleCheck(&#39;c43&#39;,this.checked)">
+        <label for="c43">Venue — payment due (90 days out ~ Feb 20, 2027)<span class="chk-priority p-high">high</span>
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c44" onchange="toggleCheck(&#39;c44&#39;,this.checked)">
+        <label for="c44">Schedule 1st in-person meeting with venue coordinator
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c45" onchange="toggleCheck(&#39;c45&#39;,this.checked)">
+        <label for="c45">Confirm groomsmen activity
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c46" onchange="toggleCheck(&#39;c46&#39;,this.checked)">
+        <label for="c46">Plan seating chart (start draft)
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c47" onchange="toggleCheck(&#39;c47&#39;,this.checked)">
+        <label for="c47">Book farewell brunch for Sunday (optional)
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c48" onchange="toggleCheck(&#39;c48&#39;,this.checked)">
+        <label for="c48">Confirm photo booth selections
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c49" onchange="toggleCheck(&#39;c49&#39;,this.checked)">
+        <label for="c49">Create family photo shot list for photographer<span class="chk-note">📌 Required by Shelby Norris Photography</span>
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c50" onchange="toggleCheck(&#39;c50&#39;,this.checked)">
+        <label for="c50">Confirm chair and decor upgrades with venue
+        </label></div></div>
     </div>
   </div>
 
@@ -492,7 +642,46 @@ body{font-family:'Lato',sans-serif;background:var(--cream);color:var(--text);min
   <div class="card">
     <div class="tl-section">
       <div class="tl-title">🔔 1 Month Out <span>by April 2027</span></div>
-      <div id="cl-1mo"></div>
+      <div id="cl-1mo"><div class="chk-item">
+        <input type="checkbox" id="c51" onchange="toggleCheck(&#39;c51&#39;,this.checked)">
+        <label for="c51">Send RSVP reminders to outstanding guests<span class="chk-priority p-high">high</span>
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c52" onchange="toggleCheck(&#39;c52&#39;,this.checked)">
+        <label for="c52">Venue — payment due (60 days out ~ Mar 22, 2027)<span class="chk-priority p-high">high</span>
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c53" onchange="toggleCheck(&#39;c53&#39;,this.checked)">
+        <label for="c53">Photographer — final balance due (~May 8, 2027)<span class="chk-priority p-high">high</span><span class="chk-note">📌 2 weeks before wedding</span>
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c54" onchange="toggleCheck(&#39;c54&#39;,this.checked)">
+        <label for="c54">Venue — payment due (30 days out ~ Apr 22, 2027)<span class="chk-priority p-high">high</span><span class="chk-note">📌 All details finalized including final guest count</span>
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c55" onchange="toggleCheck(&#39;c55&#39;,this.checked)">
+        <label for="c55">Final dress fitting
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c56" onchange="toggleCheck(&#39;c56&#39;,this.checked)">
+        <label for="c56">Break in wedding shoes
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c57" onchange="toggleCheck(&#39;c57&#39;,this.checked)">
+        <label for="c57">Schedule 2nd in-person meeting with venue coordinator<span class="chk-note">📌 Finalize all wedding details</span>
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c58" onchange="toggleCheck(&#39;c58&#39;,this.checked)">
+        <label for="c58">Confirm all vendor arrival times &amp; day-of timeline
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c59" onchange="toggleCheck(&#39;c59&#39;,this.checked)">
+        <label for="c59">Give venue final confirmed guest count
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c60" onchange="toggleCheck(&#39;c60&#39;,this.checked)">
+        <label for="c60">Prepare vendor tip envelopes
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c61" onchange="toggleCheck(&#39;c61&#39;,this.checked)">
+        <label for="c61">Finalize seating chart
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c62" onchange="toggleCheck(&#39;c62&#39;,this.checked)">
+        <label for="c62">Confirm Friday night event details
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c63" onchange="toggleCheck(&#39;c63&#39;,this.checked)">
+        <label for="c63">Confirm rehearsal dinner final headcount
+        </label></div></div>
     </div>
   </div>
 
@@ -500,7 +689,34 @@ body{font-family:'Lato',sans-serif;background:var(--cream);color:var(--text);min
   <div class="card">
     <div class="tl-section">
       <div class="tl-title">🌟 Final Week <span>May 15–21, 2027</span></div>
-      <div id="cl-week"></div>
+      <div id="cl-week"><div class="chk-item">
+        <input type="checkbox" id="c64" onchange="toggleCheck(&#39;c64&#39;,this.checked)">
+        <label for="c64">Pick up wedding dress<span class="chk-priority p-high">high</span>
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c65" onchange="toggleCheck(&#39;c65&#39;,this.checked)">
+        <label for="c65">Prepare wedding day emergency kit<span class="chk-note">📌 Sewing kit, stain remover, pain reliever, etc.</span>
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c66" onchange="toggleCheck(&#39;c66&#39;,this.checked)">
+        <label for="c66">Write vows (if personal)
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c67" onchange="toggleCheck(&#39;c67&#39;,this.checked)">
+        <label for="c67">Confirm rehearsal time &amp; all participants
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c68" onchange="toggleCheck(&#39;c68&#39;,this.checked)">
+        <label for="c68">Send final day-of timeline to all vendors
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c69" onchange="toggleCheck(&#39;c69&#39;,this.checked)">
+        <label for="c69">Confirm hotel room block details for guests
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c70" onchange="toggleCheck(&#39;c70&#39;,this.checked)">
+        <label for="c70">Steam/press wedding attire
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c71" onchange="toggleCheck(&#39;c71&#39;,this.checked)">
+        <label for="c71">Charge all devices &amp; prepare bags
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c72" onchange="toggleCheck(&#39;c72&#39;,this.checked)">
+        <label for="c72">Get a good night sleep! 💤
+        </label></div></div>
     </div>
   </div>
 
@@ -508,7 +724,34 @@ body{font-family:'Lato',sans-serif;background:var(--cream);color:var(--text);min
   <div class="card">
     <div class="tl-section" style="border-left-color:var(--gold)">
       <div class="tl-title" style="color:var(--gold)">💍 Wedding Day <span>May 22, 2027</span></div>
-      <div id="cl-dayof"></div>
+      <div id="cl-dayof"><div class="chk-item">
+        <input type="checkbox" id="c73" onchange="toggleCheck(&#39;c73&#39;,this.checked)">
+        <label for="c73">Bridal party arrives at venue
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c74" onchange="toggleCheck(&#39;c74&#39;,this.checked)">
+        <label for="c74">Groomsmen activity (time &amp; location TBD)
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c75" onchange="toggleCheck(&#39;c75&#39;,this.checked)">
+        <label for="c75">Hair &amp; makeup for bridal party
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c76" onchange="toggleCheck(&#39;c76&#39;,this.checked)">
+        <label for="c76">First look photos (if planned)
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c77" onchange="toggleCheck(&#39;c77&#39;,this.checked)">
+        <label for="c77">Ceremony
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c78" onchange="toggleCheck(&#39;c78&#39;,this.checked)">
+        <label for="c78">Cocktail hour — grounds, bar opens
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c79" onchange="toggleCheck(&#39;c79&#39;,this.checked)">
+        <label for="c79">Reception — Grand Ballroom<span class="chk-note">📌 DJ, dinner, dancing, toasts</span>
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c80" onchange="toggleCheck(&#39;c80&#39;,this.checked)">
+        <label for="c80">Send-off! 🎆<span class="chk-note">📌 Sparklers, bubbles, or petals — confirm with venue</span>
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c81" onchange="toggleCheck(&#39;c81&#39;,this.checked)">
+        <label for="c81">Collect all personal items &amp; gifts
+        </label></div></div>
     </div>
   </div>
 
@@ -516,7 +759,28 @@ body{font-family:'Lato',sans-serif;background:var(--cream);color:var(--text);min
   <div class="card">
     <div class="tl-section">
       <div class="tl-title">🙏 After the Wedding</div>
-      <div id="cl-after"></div>
+      <div id="cl-after"><div class="chk-item">
+        <input type="checkbox" id="c82" onchange="toggleCheck(&#39;c82&#39;,this.checked)">
+        <label for="c82">Send thank-you notes to all guests<span class="chk-priority p-high">high</span><span class="chk-note">📌 Track in Guest List tab</span>
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c83" onchange="toggleCheck(&#39;c83&#39;,this.checked)">
+        <label for="c83">Receive photos from photographer (check delivery timeline)<span class="chk-note">📌 Online gallery</span>
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c84" onchange="toggleCheck(&#39;c84&#39;,this.checked)">
+        <label for="c84">Damage deposit returned by venue (check timing)
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c85" onchange="toggleCheck(&#39;c85&#39;,this.checked)">
+        <label for="c85">Write vendor reviews online
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c86" onchange="toggleCheck(&#39;c86&#39;,this.checked)">
+        <label for="c86">Legal name change (if applicable)
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c87" onchange="toggleCheck(&#39;c87&#39;,this.checked)">
+        <label for="c87">Return or preserve wedding dress
+        </label></div><div class="chk-item">
+        <input type="checkbox" id="c88" onchange="toggleCheck(&#39;c88&#39;,this.checked)">
+        <label for="c88">Send farewell brunch thank-you (if hosted)
+        </label></div></div>
     </div>
   </div>
 
@@ -544,7 +808,7 @@ body{font-family:'Lato',sans-serif;background:var(--cream);color:var(--text);min
       <div class="form-group"><label>Ceremony Space</label><input type="text" class="tbl-input" id="ven-ceremony" value="Wedding Garden (outdoor) or Village Hall (indoor)" onchange="saveVenueInfo()"></div>
       <div class="form-group"><label>Reception Space</label><input type="text" class="tbl-input" id="ven-reception" value="Grand Ballroom" onchange="saveVenueInfo()"></div>
     </div>
-    <div class="form-group"><label>Notes</label><textarea class="tbl-input" id="ven-notes" rows="3" placeholder="Important details, policies, special instructions..." onchange="saveVenueInfo()">Award-winning on-site catering · Bridal suite with two bedrooms · 27-hole championship golf course views · 15 min from Athens, GA · Member pricing available · Per-person setup fee $3–5/person includes tables, chairs, linens, glassware, flatware, setup & breakdown</textarea></div>
+    <div class="form-group"><label>Notes</label><textarea class="tbl-input" id="ven-notes" rows="3" placeholder="Important details, policies, special instructions..." onchange="saveVenueInfo()">Award-winning on-site catering · Bridal suite with two bedrooms · 27-hole championship golf course views · 15 min from Athens, GA · Member pricing available · Per-person setup fee $3–5/person includes tables, chairs, linens, glassware, flatware, setup &amp; breakdown</textarea></div>
   </div>
 
   <!-- What's Included -->
@@ -552,33 +816,33 @@ body{font-family:'Lato',sans-serif;background:var(--cream);color:var(--text);min
     <div class="card-title">✅ What's Included</div>
     <p class="card-note">Check off items as you confirm them with The Georgia Club. Click any item to toggle it in/out of your plan.</p>
 
-    <div class="pkg-item included" id="vi1" onclick="togglePkgItem('vi1')" title="Click to opt in/out"><input type="checkbox" class="pkg-toggle" checked onclick="event.stopPropagation();togglePkgItem('vi1')"><div class="pkg-icon">🏛️</div><div><div class="pkg-name">Ceremony Space</div><div class="pkg-desc">Outdoor Wedding Garden with white arbor and manicured grounds, or indoor Village Hall with vaulted ceilings, exposed wood beams, and floor-to-ceiling windows.</div></div><div class="pkg-cost"><span class="badge b-included">Included</span></div></div>
+    <div class="pkg-item included" id="vi1" onclick="togglePkgItem(&#39;vi1&#39;)" title="Click to opt in/out"><input type="checkbox" class="pkg-toggle" checked="" onclick="event.stopPropagation();togglePkgItem(&#39;vi1&#39;)"><div class="pkg-icon">🏛️</div><div><div class="pkg-name">Ceremony Space</div><div class="pkg-desc">Outdoor Wedding Garden with white arbor and manicured grounds, or indoor Village Hall with vaulted ceilings, exposed wood beams, and floor-to-ceiling windows.</div></div><div class="pkg-cost"><span class="badge b-included">Included</span></div></div>
 
-    <div class="pkg-item included" id="vi2" onclick="togglePkgItem('vi2')" title="Click to opt in/out"><input type="checkbox" class="pkg-toggle" checked onclick="event.stopPropagation();togglePkgItem('vi2')"><div class="pkg-icon">🎊</div><div><div class="pkg-name">Grand Ballroom Reception</div><div class="pkg-desc">Contemporary reception space with chandeliers, high ceilings, and expansive dance floor. Capacity up to 300 guests. Neutral color palette — easily customizable.</div></div><div class="pkg-cost"><span class="badge b-included">Included</span></div></div>
+    <div class="pkg-item included" id="vi2" onclick="togglePkgItem(&#39;vi2&#39;)" title="Click to opt in/out"><input type="checkbox" class="pkg-toggle" checked="" onclick="event.stopPropagation();togglePkgItem(&#39;vi2&#39;)"><div class="pkg-icon">🎊</div><div><div class="pkg-name">Grand Ballroom Reception</div><div class="pkg-desc">Contemporary reception space with chandeliers, high ceilings, and expansive dance floor. Capacity up to 300 guests. Neutral color palette — easily customizable.</div></div><div class="pkg-cost"><span class="badge b-included">Included</span></div></div>
 
-    <div class="pkg-item included" id="vi3" onclick="togglePkgItem('vi3')" title="Click to opt in/out"><input type="checkbox" class="pkg-toggle" checked onclick="event.stopPropagation();togglePkgItem('vi3')"><div class="pkg-icon">🍽️</div><div><div class="pkg-name">On-Site Catering</div><div class="pkg-desc">Award-winning cuisine from The Georgia Club's culinary team. Menu tasting included. Chef will accommodate special requests. Confirm guest count and menu selections with coordinator.</div></div><div class="pkg-cost"><span class="badge b-included">Confirm details</span></div></div>
+    <div class="pkg-item included" id="vi3" onclick="togglePkgItem(&#39;vi3&#39;)" title="Click to opt in/out"><input type="checkbox" class="pkg-toggle" checked="" onclick="event.stopPropagation();togglePkgItem(&#39;vi3&#39;)"><div class="pkg-icon">🍽️</div><div><div class="pkg-name">On-Site Catering</div><div class="pkg-desc">Award-winning cuisine from The Georgia Club's culinary team. Menu tasting included. Chef will accommodate special requests. Confirm guest count and menu selections with coordinator.</div></div><div class="pkg-cost"><span class="badge b-included">Confirm details</span></div></div>
 
-    <div class="pkg-item included" id="vi4" onclick="togglePkgItem('vi4')" title="Click to opt in/out"><input type="checkbox" class="pkg-toggle" checked onclick="event.stopPropagation();togglePkgItem('vi4')"><div class="pkg-icon">🪑</div><div><div class="pkg-name">Tables, Chairs & Linens</div><div class="pkg-desc">Per-person setup fee ($3–5/person) includes tables, chairs, linens, glassware, flatware, and full setup & breakdown by staff.</div></div><div class="pkg-cost"><span class="badge b-included">$3–5/person</span></div></div>
+    <div class="pkg-item included" id="vi4" onclick="togglePkgItem(&#39;vi4&#39;)" title="Click to opt in/out"><input type="checkbox" class="pkg-toggle" checked="" onclick="event.stopPropagation();togglePkgItem(&#39;vi4&#39;)"><div class="pkg-icon">🪑</div><div><div class="pkg-name">Tables, Chairs &amp; Linens</div><div class="pkg-desc">Per-person setup fee ($3–5/person) includes tables, chairs, linens, glassware, flatware, and full setup &amp; breakdown by staff.</div></div><div class="pkg-cost"><span class="badge b-included">$3–5/person</span></div></div>
 
-    <div class="pkg-item included" id="vi5" onclick="togglePkgItem('vi5')" title="Click to opt in/out"><input type="checkbox" class="pkg-toggle" checked onclick="event.stopPropagation();togglePkgItem('vi5')"><div class="pkg-icon">💄</div><div><div class="pkg-name">Bridal Suite</div><div class="pkg-desc">Spacious two-bedroom bridal suite above the clubhouse. Perfect for getting ready and overnight stay the night before. Confirm availability and access times with coordinator.</div></div><div class="pkg-cost"><span class="badge b-included">Included</span></div></div>
+    <div class="pkg-item included" id="vi5" onclick="togglePkgItem(&#39;vi5&#39;)" title="Click to opt in/out"><input type="checkbox" class="pkg-toggle" checked="" onclick="event.stopPropagation();togglePkgItem(&#39;vi5&#39;)"><div class="pkg-icon">💄</div><div><div class="pkg-name">Bridal Suite</div><div class="pkg-desc">Spacious two-bedroom bridal suite above the clubhouse. Perfect for getting ready and overnight stay the night before. Confirm availability and access times with coordinator.</div></div><div class="pkg-cost"><span class="badge b-included">Included</span></div></div>
 
-    <div class="pkg-item included" id="vi6" onclick="togglePkgItem('vi6')" title="Click to opt in/out"><input type="checkbox" class="pkg-toggle" checked onclick="event.stopPropagation();togglePkgItem('vi6')"><div class="pkg-icon">👷</div><div><div class="pkg-name">Event Coordination Staff</div><div class="pkg-desc">Dedicated wedding coordinator (ask about Campbell, Morgan, or Kayla) plus full staff for setup, service, and breakdown. Highly rated for responsiveness and attention to detail.</div></div><div class="pkg-cost"><span class="badge b-included">Included</span></div></div>
+    <div class="pkg-item included" id="vi6" onclick="togglePkgItem(&#39;vi6&#39;)" title="Click to opt in/out"><input type="checkbox" class="pkg-toggle" checked="" onclick="event.stopPropagation();togglePkgItem(&#39;vi6&#39;)"><div class="pkg-icon">👷</div><div><div class="pkg-name">Event Coordination Staff</div><div class="pkg-desc">Dedicated wedding coordinator (ask about Campbell, Morgan, or Kayla) plus full staff for setup, service, and breakdown. Highly rated for responsiveness and attention to detail.</div></div><div class="pkg-cost"><span class="badge b-included">Included</span></div></div>
 
-    <div class="pkg-item decision" id="vi7" onclick="togglePkgItem('vi7')" title="Click to opt in/out"><input type="checkbox" class="pkg-toggle" checked onclick="event.stopPropagation();togglePkgItem('vi7')"><div class="pkg-icon">🌿</div><div><div class="pkg-name">Rain Backup Plan</div><div class="pkg-desc">Venue has an indoor backup option if weather requires moving the ceremony inside. Confirm backup plan details with your coordinator.</div></div><div class="pkg-cost"><span class="badge b-included">Confirm</span></div></div>
+    <div class="pkg-item decision" id="vi7" onclick="togglePkgItem(&#39;vi7&#39;)" title="Click to opt in/out"><input type="checkbox" class="pkg-toggle" checked="" onclick="event.stopPropagation();togglePkgItem(&#39;vi7&#39;)"><div class="pkg-icon">🌿</div><div><div class="pkg-name">Rain Backup Plan</div><div class="pkg-desc">Venue has an indoor backup option if weather requires moving the ceremony inside. Confirm backup plan details with your coordinator.</div></div><div class="pkg-cost"><span class="badge b-included">Confirm</span></div></div>
 
-    <div class="pkg-item decision" id="vi8" onclick="togglePkgItem('vi8')" title="Click to opt in/out"><input type="checkbox" class="pkg-toggle" onclick="event.stopPropagation();togglePkgItem('vi8')"><div class="pkg-icon">🎵</div><div><div class="pkg-name">DJ / Band</div><div class="pkg-desc">Confirm whether venue provides DJ or if you bring your own. The Georgia Club works with outside DJ vendors. Confirm AV setup, sound restrictions, and end time.</div></div><div class="pkg-cost"><span class="badge b-tbd">Confirm</span></div></div>
+    <div class="pkg-item decision" id="vi8" onclick="togglePkgItem(&#39;vi8&#39;)" title="Click to opt in/out"><input type="checkbox" class="pkg-toggle" onclick="event.stopPropagation();togglePkgItem(&#39;vi8&#39;)"><div class="pkg-icon">🎵</div><div><div class="pkg-name">DJ / Band</div><div class="pkg-desc">Confirm whether venue provides DJ or if you bring your own. The Georgia Club works with outside DJ vendors. Confirm AV setup, sound restrictions, and end time.</div></div><div class="pkg-cost"><span class="badge b-tbd">Confirm</span></div></div>
 
-    <div class="pkg-item decision" id="vi9" onclick="togglePkgItem('vi9')" title="Click to opt in/out"><input type="checkbox" class="pkg-toggle" onclick="event.stopPropagation();togglePkgItem('vi9')"><div class="pkg-icon">🍺</div><div><div class="pkg-name">Bar Service</div><div class="pkg-desc">Confirm bar package options — beer, wine, signature cocktails, full open bar. Ask about bar hours, what's included vs. additional cost, and any corkage policies.</div></div><div class="pkg-cost"><span class="badge b-tbd">Confirm</span></div></div>
+    <div class="pkg-item decision" id="vi9" onclick="togglePkgItem(&#39;vi9&#39;)" title="Click to opt in/out"><input type="checkbox" class="pkg-toggle" onclick="event.stopPropagation();togglePkgItem(&#39;vi9&#39;)"><div class="pkg-icon">🍺</div><div><div class="pkg-name">Bar Service</div><div class="pkg-desc">Confirm bar package options — beer, wine, signature cocktails, full open bar. Ask about bar hours, what's included vs. additional cost, and any corkage policies.</div></div><div class="pkg-cost"><span class="badge b-tbd">Confirm</span></div></div>
 
-    <div class="pkg-item decision" id="vi10" onclick="togglePkgItem('vi10')" title="Click to opt in/out"><input type="checkbox" class="pkg-toggle" onclick="event.stopPropagation();togglePkgItem('vi10')"><div class="pkg-icon">🎂</div><div><div class="pkg-name">Cake / Dessert</div><div class="pkg-desc">Confirm whether The Georgia Club provides cake or if outside bakery is allowed. Ask about cutting fee if bringing your own cake.</div></div><div class="pkg-cost"><span class="badge b-tbd">Confirm</span></div></div>
+    <div class="pkg-item decision" id="vi10" onclick="togglePkgItem(&#39;vi10&#39;)" title="Click to opt in/out"><input type="checkbox" class="pkg-toggle" onclick="event.stopPropagation();togglePkgItem(&#39;vi10&#39;)"><div class="pkg-icon">🎂</div><div><div class="pkg-name">Cake / Dessert</div><div class="pkg-desc">Confirm whether The Georgia Club provides cake or if outside bakery is allowed. Ask about cutting fee if bringing your own cake.</div></div><div class="pkg-cost"><span class="badge b-tbd">Confirm</span></div></div>
 
-    <div class="pkg-item decision" id="vi11" onclick="togglePkgItem('vi11')" title="Click to opt in/out"><input type="checkbox" class="pkg-toggle" onclick="event.stopPropagation();togglePkgItem('vi11')"><div class="pkg-icon">🌹</div><div><div class="pkg-name">Florals / Decor</div><div class="pkg-desc">Outside florists and decorators are typically allowed. Confirm any restrictions on candles, confetti, or other decor. Ask about setup access time for vendors.</div></div><div class="pkg-cost"><span class="badge b-tbd">Outside vendor</span></div></div>
+    <div class="pkg-item decision" id="vi11" onclick="togglePkgItem(&#39;vi11&#39;)" title="Click to opt in/out"><input type="checkbox" class="pkg-toggle" onclick="event.stopPropagation();togglePkgItem(&#39;vi11&#39;)"><div class="pkg-icon">🌹</div><div><div class="pkg-name">Florals / Decor</div><div class="pkg-desc">Outside florists and decorators are typically allowed. Confirm any restrictions on candles, confetti, or other decor. Ask about setup access time for vendors.</div></div><div class="pkg-cost"><span class="badge b-tbd">Outside vendor</span></div></div>
 
-    <div class="pkg-item decision" id="vi12" onclick="togglePkgItem('vi12')" title="Click to opt in/out"><input type="checkbox" class="pkg-toggle" onclick="event.stopPropagation();togglePkgItem('vi12')"><div class="pkg-icon">📸</div><div><div class="pkg-name">Photography / Videography</div><div class="pkg-desc">Outside photographers and videographers welcome. Confirm any restrictions on drone use over the golf course. Ask about access for golden hour photos on the course.</div></div><div class="pkg-cost"><span class="badge b-tbd">Outside vendor</span></div></div>
+    <div class="pkg-item decision" id="vi12" onclick="togglePkgItem(&#39;vi12&#39;)" title="Click to opt in/out"><input type="checkbox" class="pkg-toggle" onclick="event.stopPropagation();togglePkgItem(&#39;vi12&#39;)"><div class="pkg-icon">📸</div><div><div class="pkg-name">Photography / Videography</div><div class="pkg-desc">Outside photographers and videographers welcome. Confirm any restrictions on drone use over the golf course. Ask about access for golden hour photos on the course.</div></div><div class="pkg-cost"><span class="badge b-tbd">Outside vendor</span></div></div>
 
-    <div class="pkg-item decision" id="vi13" onclick="togglePkgItem('vi13')" title="Click to opt in/out"><input type="checkbox" class="pkg-toggle" onclick="event.stopPropagation();togglePkgItem('vi13')"><div class="pkg-icon">🎆</div><div><div class="pkg-name">Send-Off</div><div class="pkg-desc">Confirm what send-off options are permitted — sparklers, bubbles, flower petals, etc. Some venues restrict fireworks or open flame outdoors.</div></div><div class="pkg-cost"><span class="badge b-tbd">Confirm</span></div></div>
+    <div class="pkg-item decision" id="vi13" onclick="togglePkgItem(&#39;vi13&#39;)" title="Click to opt in/out"><input type="checkbox" class="pkg-toggle" onclick="event.stopPropagation();togglePkgItem(&#39;vi13&#39;)"><div class="pkg-icon">🎆</div><div><div class="pkg-name">Send-Off</div><div class="pkg-desc">Confirm what send-off options are permitted — sparklers, bubbles, flower petals, etc. Some venues restrict fireworks or open flame outdoors.</div></div><div class="pkg-cost"><span class="badge b-tbd">Confirm</span></div></div>
 
-    <div class="pkg-item decision" id="vi14" onclick="togglePkgItem('vi14')" title="Click to opt in/out"><input type="checkbox" class="pkg-toggle" onclick="event.stopPropagation();togglePkgItem('vi14')"><div class="pkg-icon">🚗</div><div><div class="pkg-name">Parking</div><div class="pkg-desc">Confirm parking availability for guests. Ask about valet options, shuttle service from nearby hotels, and any parking restrictions on the property.</div></div><div class="pkg-cost"><span class="badge b-included">On-site</span></div></div>
+    <div class="pkg-item decision" id="vi14" onclick="togglePkgItem(&#39;vi14&#39;)" title="Click to opt in/out"><input type="checkbox" class="pkg-toggle" onclick="event.stopPropagation();togglePkgItem(&#39;vi14&#39;)"><div class="pkg-icon">🚗</div><div><div class="pkg-name">Parking</div><div class="pkg-desc">Confirm parking availability for guests. Ask about valet options, shuttle service from nearby hotels, and any parking restrictions on the property.</div></div><div class="pkg-cost"><span class="badge b-included">On-site</span></div></div>
 
   </div>
 
@@ -587,8 +851,8 @@ body{font-family:'Lato',sans-serif;background:var(--cream);color:var(--text);min
     <div class="card-title">📝 Decisions to Make</div>
     <p class="card-note">Track key decisions here. Check off each one once finalized.</p>
 
-    <div class="venue-extra" id="vd-catering" onclick="if(event.target.tagName!='INPUT'&&event.target.tagName!='TEXTAREA')toggleVenueDecision(this)">
-      <input type="checkbox" onclick="event.stopPropagation();toggleVenueDecision(this.closest('.venue-extra'))">
+    <div class="venue-extra" id="vd-catering" onclick="if(event.target.tagName!=&#39;INPUT&#39;&amp;&amp;event.target.tagName!=&#39;TEXTAREA&#39;)toggleVenueDecision(this)">
+      <input type="checkbox" onclick="event.stopPropagation();toggleVenueDecision(this.closest(&#39;.venue-extra&#39;))">
       <div style="flex:1">
         <div class="pkg-name">🍽️ Catering Menu Selection</div>
         <div class="pkg-desc">Schedule menu tasting with The Georgia Club chef. Confirm entrée selections, appetizers, and any dietary accommodations.</div>
@@ -607,37 +871,37 @@ body{font-family:'Lato',sans-serif;background:var(--cream);color:var(--text);min
     </div>
 
     <div class="venue-extra" id="vd-ceremony" onclick="toggleVenueDecision(this)">
-      <input type="checkbox" onclick="event.stopPropagation();toggleVenueDecision(this.closest('.venue-extra'))">
+      <input type="checkbox" onclick="event.stopPropagation();toggleVenueDecision(this.closest(&#39;.venue-extra&#39;))">
       <div style="flex:1"><div class="pkg-name">🏛️ Ceremony Location Choice</div><div class="pkg-desc">Outdoor Wedding Garden with white arbor, or indoor Village Hall. Consider having a rain backup plan regardless.</div></div>
     </div>
 
     <div class="venue-extra" id="vd-sendoff" onclick="toggleVenueDecision(this)">
-      <input type="checkbox" onclick="event.stopPropagation();toggleVenueDecision(this.closest('.venue-extra'))">
+      <input type="checkbox" onclick="event.stopPropagation();toggleVenueDecision(this.closest(&#39;.venue-extra&#39;))">
       <div style="flex:1"><div class="pkg-name">🎆 Send-Off Choice</div><div class="pkg-desc">Confirm permitted send-off options with venue — sparklers, bubbles, flower petals, etc.</div></div>
     </div>
 
     <div class="venue-extra" id="vd-cocktails" onclick="toggleVenueDecision(this)">
-      <input type="checkbox" onclick="event.stopPropagation();toggleVenueDecision(this.closest('.venue-extra'))">
+      <input type="checkbox" onclick="event.stopPropagation();toggleVenueDecision(this.closest(&#39;.venue-extra&#39;))">
       <div style="flex:1"><div class="pkg-name">🍹 Bar Package</div><div class="pkg-desc">Select bar package — beer/wine only, signature cocktails, or full open bar. Confirm hours and per-person pricing.</div></div>
     </div>
 
     <div class="venue-extra" id="vd-dancefloor" onclick="toggleVenueDecision(this)">
-      <input type="checkbox" onclick="event.stopPropagation();toggleVenueDecision(this.closest('.venue-extra'))">
+      <input type="checkbox" onclick="event.stopPropagation();toggleVenueDecision(this.closest(&#39;.venue-extra&#39;))">
       <div style="flex:1"><div class="pkg-name">🕺 Dance Floor Setup</div><div class="pkg-desc">Confirm dance floor size and placement in the Grand Ballroom. Ask about lighting options.</div></div>
     </div>
 
     <div class="venue-extra" id="vd-rehearsal" onclick="toggleVenueDecision(this)">
-      <input type="checkbox" onclick="event.stopPropagation();toggleVenueDecision(this.closest('.venue-extra'))">
+      <input type="checkbox" onclick="event.stopPropagation();toggleVenueDecision(this.closest(&#39;.venue-extra&#39;))">
       <div style="flex:1"><div class="pkg-name">📅 Rehearsal Time &amp; Space</div><div class="pkg-desc">Book your rehearsal time at the venue. Confirm which space and whether rehearsal dinner can be held at The Georgia Club.</div></div>
     </div>
 
     <div class="venue-extra" id="vd-decor" onclick="toggleVenueDecision(this)">
-      <input type="checkbox" onclick="event.stopPropagation();toggleVenueDecision(this.closest('.venue-extra'))">
+      <input type="checkbox" onclick="event.stopPropagation();toggleVenueDecision(this.closest(&#39;.venue-extra&#39;))">
       <div style="flex:1"><div class="pkg-name">🎨 Decor &amp; Florals Plan</div><div class="pkg-desc">Schedule decor walkthrough with coordinator. Confirm vendor access time, decor restrictions, and floral setup timing.</div></div>
     </div>
 
     <div class="venue-extra" id="vd-marquee" onclick="toggleVenueDecision(this)">
-      <input type="checkbox" onclick="event.stopPropagation();toggleVenueDecision(this.closest('.venue-extra'))">
+      <input type="checkbox" onclick="event.stopPropagation();toggleVenueDecision(this.closest(&#39;.venue-extra&#39;))">
       <div style="flex:1"><div class="pkg-name">📸 Photography Access</div><div class="pkg-desc">Confirm photographer access to the golf course, grounds, and any restricted areas. Ask about drone/aerial photography policy.</div></div>
     </div>
   </div>
@@ -668,41 +932,41 @@ body{font-family:'Lato',sans-serif;background:var(--cream);color:var(--text);min
       <input class="search-box" type="text" id="gl-search" placeholder="🔍 Search guests..." oninput="renderGuests()" style="flex:1;min-width:200px;">
       <div style="display:flex;align-items:center;gap:6px;flex-shrink:0;">
         <strong style="font-size:.8em;color:var(--text-light);text-transform:uppercase;letter-spacing:1px;">Sort:</strong>
-        <button class="f-btn fa" id="sort-orig"   onclick="setSort('original',this)">Original</button>
-        <button class="f-btn"    id="sort-lname"  onclick="setSort('lastname',this)">Last Name</button>
-        <button class="f-btn"    id="sort-side"   onclick="setSort('side',this)">Host</button>
+        <button class="f-btn fa" id="sort-orig" onclick="setSort(&#39;original&#39;,this)">Original</button>
+        <button class="f-btn" id="sort-lname" onclick="setSort(&#39;lastname&#39;,this)">Last Name</button>
+        <button class="f-btn" id="sort-side" onclick="setSort(&#39;side&#39;,this)">Host</button>
       </div>
     </div>
     <div class="filter-bar" style="margin-bottom:8px;">
       <strong style="font-size:.8em;color:var(--text-light);text-transform:uppercase;letter-spacing:1px;margin-right:4px;">Host:</strong>
-      <button class="f-btn fa" onclick="setFilter('side','all',this)">All</button>
-      <button class="f-btn" onclick="setFilter('side','Ella',this)">🌸 Ella (Oxley Family)</button>
-      <button class="f-btn" onclick="setFilter('side','Will',this)">🐶 Will (Farmer Family)</button>
+      <button class="f-btn fa" onclick="setFilter(&#39;side&#39;,&#39;all&#39;,this)">All</button>
+      <button class="f-btn" onclick="setFilter(&#39;side&#39;,&#39;Ella&#39;,this)">🌸 Ella (Oxley Family)</button>
+      <button class="f-btn" onclick="setFilter(&#39;side&#39;,&#39;Will&#39;,this)">🐶 Will (Farmer Family)</button>
     </div>
     <div class="filter-bar" style="margin-bottom:8px;">
       <strong style="font-size:.8em;color:var(--text-light);text-transform:uppercase;letter-spacing:1px;margin-right:4px;">RSVP:</strong>
-      <button class="f-btn fa" onclick="setFilter('rsvp','all',this)">All</button>
-      <button class="f-btn" onclick="setFilter('rsvp','Yes',this)">✅ Yes</button>
-      <button class="f-btn" onclick="setFilter('rsvp','No',this)">❌ No</button>
-      <button class="f-btn" onclick="setFilter('rsvp','Maybe',this)">❓ Maybe</button>
-      <button class="f-btn" onclick="setFilter('rsvp','Unknown',this)">⬜ Unknown</button>
+      <button class="f-btn fa" onclick="setFilter(&#39;rsvp&#39;,&#39;all&#39;,this)">All</button>
+      <button class="f-btn" onclick="setFilter(&#39;rsvp&#39;,&#39;Yes&#39;,this)">✅ Yes</button>
+      <button class="f-btn" onclick="setFilter(&#39;rsvp&#39;,&#39;No&#39;,this)">❌ No</button>
+      <button class="f-btn" onclick="setFilter(&#39;rsvp&#39;,&#39;Maybe&#39;,this)">❓ Maybe</button>
+      <button class="f-btn" onclick="setFilter(&#39;rsvp&#39;,&#39;Unknown&#39;,this)">⬜ Unknown</button>
     </div>
     <div class="filter-bar" style="margin-bottom:8px;">
       <strong style="font-size:.8em;color:var(--text-light);text-transform:uppercase;letter-spacing:1px;margin-right:4px;">Invited:</strong>
-      <button class="f-btn fa" onclick="setFilter('inv','all',this)">All</button>
-      <button class="f-btn" onclick="setFilter('inv','Yes',this)">✅ Yes</button>
-      <button class="f-btn" onclick="setFilter('inv','Maybe',this)">❓ Maybe</button>
-      <button class="f-btn" onclick="setFilter('inv','Remove',this)">🗑️ Removed</button>
+      <button class="f-btn fa" onclick="setFilter(&#39;inv&#39;,&#39;all&#39;,this)">All</button>
+      <button class="f-btn" onclick="setFilter(&#39;inv&#39;,&#39;Yes&#39;,this)">✅ Yes</button>
+      <button class="f-btn" onclick="setFilter(&#39;inv&#39;,&#39;Maybe&#39;,this)">❓ Maybe</button>
+      <button class="f-btn" onclick="setFilter(&#39;inv&#39;,&#39;Remove&#39;,this)">🗑️ Removed</button>
     </div>
     <div class="filter-bar" style="justify-content:space-between;flex-wrap:wrap;gap:8px;">
       <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;">
         <strong style="font-size:.8em;color:var(--text-light);text-transform:uppercase;letter-spacing:1px;margin-right:4px;">Thank-You:</strong>
-        <button class="f-btn fa" onclick="setFilter('ty','all',this)">All</button>
-        <button class="f-btn" onclick="setFilter('ty','sent',this)">✉️ Sent</button>
-        <button class="f-btn" onclick="setFilter('ty','unsent',this)">📬 Not Sent</button>
+        <button class="f-btn fa" onclick="setFilter(&#39;ty&#39;,&#39;all&#39;,this)">All</button>
+        <button class="f-btn" onclick="setFilter(&#39;ty&#39;,&#39;sent&#39;,this)">✉️ Sent</button>
+        <button class="f-btn" onclick="setFilter(&#39;ty&#39;,&#39;unsent&#39;,this)">📬 Not Sent</button>
       </div>
       <div style="display:flex;gap:8px;flex-shrink:0;">
-        <button class="btn btn-sm" onclick="openModal('add-guest-modal')">➕ Add Guest</button>
+        <button class="btn btn-sm" onclick="openModal(&#39;add-guest-modal&#39;)">➕ Add Guest</button>
         <button class="btn btn-sm btn-p" onclick="exportGuests()" title="Download guest list as CSV">📥 Download Guest List</button>
       </div>
     </div>
@@ -726,7 +990,83 @@ body{font-family:'Lato',sans-serif;background:var(--cream);color:var(--text);min
             <th>Notes</th>
           </tr>
         </thead>
-        <tbody id="guest-tbody"></tbody>
+        <tbody id="guest-tbody"><tr><td colspan="10" style="background:var(--purple);padding:6px 12px;font-weight:700;font-size:.82em;text-transform:uppercase;letter-spacing:1px;color:#fff;">✅ Invited (4)</td></tr><tr style="">
+      <td style="color:var(--text-light);font-size:.8em;">2</td>
+      <td><input class="tbl-input" style="font-weight:700;min-width:120px;" value="Will Farmer" placeholder="Name..." onchange="updateGuest(1,&#39;name&#39;,this.value)"></td>
+      <td style="font-size:.82em;color:var(--text-light);">Wedding Party</td>
+      <td><span class="badge b-max">🐶 Will (Farmer)</span></td>
+      <td>
+        <select class="tbl-select" style="border-color:var(--success);" onchange="updateGuest(1,&#39;inv&#39;,this.value)">
+          <option value="Yes" selected="">Yes</option><option value="Maybe">Maybe</option><option value="Remove">Remove</option>
+        </select>
+      </td>
+      <td>
+        <select class="tbl-select" onchange="updateGuest(1,&#39;rsvp&#39;,this.value)">
+          <option value="Yes">Yes</option><option value="No">No</option><option value="Maybe">Maybe</option><option value="Unknown" selected="">Unknown</option>
+        </select>
+      </td>
+      <td><input type="number" class="tbl-input" style="width:52px;" value="0" min="0" max="10" onchange="updateGuest(1,&#39;count&#39;,+this.value)"></td>
+      <td style="text-align:center;"><input type="checkbox" style="accent-color:var(--orange);width:17px;height:17px;" onchange="updateGuest(1,&#39;ty&#39;,this.checked)"></td>
+      <td style="text-align:center;"><input type="checkbox" style="accent-color:var(--purple);width:17px;height:17px;" checked="" onchange="updateGuest(1,&#39;reh&#39;,this.checked)"></td>
+      <td><input class="tbl-input" value="" placeholder="Notes..." onchange="updateGuest(1,&#39;notes&#39;,this.value)"></td>
+    </tr><tr style="">
+      <td style="color:var(--text-light);font-size:.8em;">3</td>
+      <td><input class="tbl-input" style="font-weight:700;min-width:120px;" value="Ella Oxley" placeholder="Name..." onchange="updateGuest(2,&#39;name&#39;,this.value)"></td>
+      <td style="font-size:.82em;color:var(--text-light);">Wedding Party</td>
+      <td><span class="badge b-alyssa">🌸 Ella (Oxley)</span></td>
+      <td>
+        <select class="tbl-select" style="border-color:var(--success);" onchange="updateGuest(2,&#39;inv&#39;,this.value)">
+          <option value="Yes" selected="">Yes</option><option value="Maybe">Maybe</option><option value="Remove">Remove</option>
+        </select>
+      </td>
+      <td>
+        <select class="tbl-select" onchange="updateGuest(2,&#39;rsvp&#39;,this.value)">
+          <option value="Yes">Yes</option><option value="No">No</option><option value="Maybe">Maybe</option><option value="Unknown" selected="">Unknown</option>
+        </select>
+      </td>
+      <td><input type="number" class="tbl-input" style="width:52px;" value="0" min="0" max="10" onchange="updateGuest(2,&#39;count&#39;,+this.value)"></td>
+      <td style="text-align:center;"><input type="checkbox" style="accent-color:var(--orange);width:17px;height:17px;" onchange="updateGuest(2,&#39;ty&#39;,this.checked)"></td>
+      <td style="text-align:center;"><input type="checkbox" style="accent-color:var(--purple);width:17px;height:17px;" checked="" onchange="updateGuest(2,&#39;reh&#39;,this.checked)"></td>
+      <td><input class="tbl-input" value="" placeholder="Notes..." onchange="updateGuest(2,&#39;notes&#39;,this.value)"></td>
+    </tr><tr style="">
+      <td style="color:var(--text-light);font-size:.8em;">4</td>
+      <td><input class="tbl-input" style="font-weight:700;min-width:120px;" value="Traci Oxley" placeholder="Name..." onchange="updateGuest(3,&#39;name&#39;,this.value)"></td>
+      <td style="font-size:.82em;color:var(--text-light);">Oxley Family</td>
+      <td><span class="badge b-alyssa">🌸 Ella (Oxley)</span></td>
+      <td>
+        <select class="tbl-select" style="border-color:var(--success);" onchange="updateGuest(3,&#39;inv&#39;,this.value)">
+          <option value="Yes" selected="">Yes</option><option value="Maybe">Maybe</option><option value="Remove">Remove</option>
+        </select>
+      </td>
+      <td>
+        <select class="tbl-select" onchange="updateGuest(3,&#39;rsvp&#39;,this.value)">
+          <option value="Yes">Yes</option><option value="No">No</option><option value="Maybe">Maybe</option><option value="Unknown" selected="">Unknown</option>
+        </select>
+      </td>
+      <td><input type="number" class="tbl-input" style="width:52px;" value="0" min="0" max="10" onchange="updateGuest(3,&#39;count&#39;,+this.value)"></td>
+      <td style="text-align:center;"><input type="checkbox" style="accent-color:var(--orange);width:17px;height:17px;" onchange="updateGuest(3,&#39;ty&#39;,this.checked)"></td>
+      <td style="text-align:center;"><input type="checkbox" style="accent-color:var(--purple);width:17px;height:17px;" checked="" onchange="updateGuest(3,&#39;reh&#39;,this.checked)"></td>
+      <td><input class="tbl-input" value="Mother of the Bride" placeholder="Notes..." onchange="updateGuest(3,&#39;notes&#39;,this.value)"></td>
+    </tr><tr style="">
+      <td style="color:var(--text-light);font-size:.8em;">5</td>
+      <td><input class="tbl-input" style="font-weight:700;min-width:120px;" value="Andrew Oxley" placeholder="Name..." onchange="updateGuest(4,&#39;name&#39;,this.value)"></td>
+      <td style="font-size:.82em;color:var(--text-light);">Oxley Family</td>
+      <td><span class="badge b-alyssa">🌸 Ella (Oxley)</span></td>
+      <td>
+        <select class="tbl-select" style="border-color:var(--success);" onchange="updateGuest(4,&#39;inv&#39;,this.value)">
+          <option value="Yes" selected="">Yes</option><option value="Maybe">Maybe</option><option value="Remove">Remove</option>
+        </select>
+      </td>
+      <td>
+        <select class="tbl-select" onchange="updateGuest(4,&#39;rsvp&#39;,this.value)">
+          <option value="Yes">Yes</option><option value="No">No</option><option value="Maybe">Maybe</option><option value="Unknown" selected="">Unknown</option>
+        </select>
+      </td>
+      <td><input type="number" class="tbl-input" style="width:52px;" value="0" min="0" max="10" onchange="updateGuest(4,&#39;count&#39;,+this.value)"></td>
+      <td style="text-align:center;"><input type="checkbox" style="accent-color:var(--orange);width:17px;height:17px;" onchange="updateGuest(4,&#39;ty&#39;,this.checked)"></td>
+      <td style="text-align:center;"><input type="checkbox" style="accent-color:var(--purple);width:17px;height:17px;" checked="" onchange="updateGuest(4,&#39;reh&#39;,this.checked)"></td>
+      <td><input class="tbl-input" value="Father of the Bride" placeholder="Notes..." onchange="updateGuest(4,&#39;notes&#39;,this.value)"></td>
+    </tr></tbody>
       </table>
     </div>
   </div>
@@ -744,7 +1084,7 @@ body{font-family:'Lato',sans-serif;background:var(--cream);color:var(--text);min
     <div class="sched-day-hdr"><h3>🌿 Thursday — May 20, 2027</h3><p>Rehearsal Day</p></div>
     <div class="sched-item"><div class="sched-time">TBD AM</div><div><div class="sched-event">Venue Rehearsal</div><div class="sched-detail">Venue rehearsal — confirm time with your venue. Coordinate with officiant &amp; wedding party.</div></div></div>
     <div class="sched-item"><div class="sched-time">Evening</div><div><div class="sched-event">🍽️ Rehearsal Dinner</div><div class="sched-detail">Location TBD — plan for wedding party + immediate family. Add details below.</div></div></div>
-    <div class="sched-item"><div class="sched-time">Notes</div><div><div class="sched-event" style="font-weight:400;"><textarea class="tbl-input" style="width:100%;min-width:unset;" rows="2" placeholder="Add rehearsal dinner details, venue, guests, time..." onchange="saveSchedNote('thu',this.value)" id="sn-thu"></textarea></div></div></div>
+    <div class="sched-item"><div class="sched-time">Notes</div><div><div class="sched-event" style="font-weight:400;"><textarea class="tbl-input" style="width:100%;min-width:unset;" rows="2" placeholder="Add rehearsal dinner details, venue, guests, time..." onchange="saveSchedNote(&#39;thu&#39;,this.value)" id="sn-thu"></textarea></div></div></div>
   </div>
 
   <!-- Friday -->
@@ -752,7 +1092,7 @@ body{font-family:'Lato',sans-serif;background:var(--cream);color:var(--text);min
     <div class="sched-day-hdr"><h3>🌙 Friday — May 21, 2027</h3><p>Pre-Wedding Day</p></div>
     <div class="sched-item"><div class="sched-time">Afternoon</div><div><div class="sched-event">Out-of-Town Guest Arrivals</div><div class="sched-detail">Guests checking into hotels in Athens/Statham area. Consider sending welcome bags to hotel.</div></div></div>
     <div class="sched-item"><div class="sched-time">Evening</div><div><div class="sched-event">🎉 Welcome Gathering (optional)</div><div class="sched-detail">Casual welcome event for out-of-town guests — bar, bonfire, backyard gathering, or restaurant. Details TBD.</div></div></div>
-    <div class="sched-item"><div class="sched-time">Notes</div><div><div class="sched-event" style="font-weight:400;"><textarea class="tbl-input" style="width:100%;min-width:unset;" rows="2" placeholder="Friday night event details, venue, time, guest list..." onchange="saveSchedNote('fri',this.value)" id="sn-fri"></textarea></div></div></div>
+    <div class="sched-item"><div class="sched-time">Notes</div><div><div class="sched-event" style="font-weight:400;"><textarea class="tbl-input" style="width:100%;min-width:unset;" rows="2" placeholder="Friday night event details, venue, time, guest list..." onchange="saveSchedNote(&#39;fri&#39;,this.value)" id="sn-fri"></textarea></div></div></div>
   </div>
 
   <!-- Saturday -->
@@ -766,7 +1106,7 @@ body{font-family:'Lato',sans-serif;background:var(--cream);color:var(--text);min
     <div class="sched-item"><div class="sched-time">Cocktail Hour</div><div><div class="sched-event">🥂 Cocktail Hour</div><div class="sched-detail">Cocktail hour — patio, tables, lawn games, bar opens, photo booth.</div></div></div>
     <div class="sched-item"><div class="sched-time">Reception</div><div><div class="sched-event">🎉 Reception (6 Hours Total)</div><div class="sched-detail">DJ, dinner, dancing. Add your reception details here.</div></div></div>
     <div class="sched-item"><div class="sched-time">By 10 PM</div><div><div class="sched-event">🎆 Send-Off</div><div class="sched-detail">Choose your send-off! Fireworks, sparklers, getaway car, or other. Confirm end time with venue.</div></div></div>
-    <div class="sched-item"><div class="sched-time">Notes</div><div><div class="sched-event" style="font-weight:400;"><textarea class="tbl-input" style="width:100%;min-width:unset;" rows="3" placeholder="Add ceremony time, exact timeline, special moments..." onchange="saveSchedNote('sat',this.value)" id="sn-sat"></textarea></div></div></div>
+    <div class="sched-item"><div class="sched-time">Notes</div><div><div class="sched-event" style="font-weight:400;"><textarea class="tbl-input" style="width:100%;min-width:unset;" rows="3" placeholder="Add ceremony time, exact timeline, special moments..." onchange="saveSchedNote(&#39;sat&#39;,this.value)" id="sn-sat"></textarea></div></div></div>
   </div>
 
   <!-- Sunday -->
@@ -774,7 +1114,7 @@ body{font-family:'Lato',sans-serif;background:var(--cream);color:var(--text);min
     <div class="sched-day-hdr"><h3>☀️ Sunday — May 23, 2027</h3><p>Day After</p></div>
     <div class="sched-item"><div class="sched-time">Morning</div><div><div class="sched-event">Farewell Brunch (optional)</div><div class="sched-detail">Consider hosting a morning-after brunch for out-of-town guests. The Georgia Club may be able to host — or a nearby Athens restaurant. Location TBD.</div></div></div>
     <div class="sched-item"><div class="sched-time">Afternoon</div><div><div class="sched-event">✈️ Honeymoon Departure</div><div class="sched-detail">Honeymoon destination TBD — add details in the Vendors tab.</div></div></div>
-    <div class="sched-item"><div class="sched-time">Notes</div><div><div class="sched-event" style="font-weight:400;"><textarea class="tbl-input" style="width:100%;min-width:unset;" rows="2" placeholder="Sunday brunch, guest checkout, honeymoon departure..." onchange="saveSchedNote('sun',this.value)" id="sn-sun"></textarea></div></div></div>
+    <div class="sched-item"><div class="sched-time">Notes</div><div><div class="sched-event" style="font-weight:400;"><textarea class="tbl-input" style="width:100%;min-width:unset;" rows="2" placeholder="Sunday brunch, guest checkout, honeymoon departure..." onchange="saveSchedNote(&#39;sun&#39;,this.value)" id="sn-sun"></textarea></div></div></div>
   </div>
 </div>
 
@@ -804,7 +1144,55 @@ body{font-family:'Lato',sans-serif;background:var(--cream);color:var(--text);min
 
   <div class="card">
     <div class="card-title">📋 Hotel Block To-Do</div>
-    <div id="hotel-tasks"></div>
+    <div id="hotel-tasks">
+    <div class="hotel-task">
+      <input type="checkbox" onchange="toggleHotelTask(&#39;h1&#39;,this.checked)">
+      <label>Research hotels near The Georgia Club in Statham, GA (near Athens)</label>
+    </div>
+    <div class="hotel-task">
+      <input type="checkbox" onchange="toggleHotelTask(&#39;h2&#39;,this.checked)">
+      <label>Contact hotel sales manager about group room block</label>
+    </div>
+    <div class="hotel-task">
+      <input type="checkbox" onchange="toggleHotelTask(&#39;h3&#39;,this.checked)">
+      <label>Negotiate group rate for wedding weekend (Thu–Sun)</label>
+    </div>
+    <div class="hotel-task">
+      <input type="checkbox" onchange="toggleHotelTask(&#39;h4&#39;,this.checked)">
+      <label>Confirm number of rooms to reserve in the block</label>
+    </div>
+    <div class="hotel-task">
+      <input type="checkbox" onchange="toggleHotelTask(&#39;h5&#39;,this.checked)">
+      <label>Get cut-off date (date after which unbooked rooms release)</label>
+    </div>
+    <div class="hotel-task">
+      <input type="checkbox" onchange="toggleHotelTask(&#39;h6&#39;,this.checked)">
+      <label>Get guest booking link / group code</label>
+    </div>
+    <div class="hotel-task">
+      <input type="checkbox" onchange="toggleHotelTask(&#39;h7&#39;,this.checked)">
+      <label>Consider second hotel option for different budget levels</label>
+    </div>
+    <div class="hotel-task">
+      <input type="checkbox" onchange="toggleHotelTask(&#39;h8&#39;,this.checked)">
+      <label>Add hotel info to wedding website</label>
+    </div>
+    <div class="hotel-task">
+      <input type="checkbox" onchange="toggleHotelTask(&#39;h9&#39;,this.checked)">
+      <label>Include hotel details in wedding invitations</label>
+    </div>
+    <div class="hotel-task">
+      <input type="checkbox" onchange="toggleHotelTask(&#39;h10&#39;,this.checked)">
+      <label>Send hotel info to out-of-town guests directly</label>
+    </div>
+    <div class="hotel-task">
+      <input type="checkbox" onchange="toggleHotelTask(&#39;h11&#39;,this.checked)">
+      <label>Check block status 60 days before — add rooms if needed</label>
+    </div>
+    <div class="hotel-task">
+      <input type="checkbox" onchange="toggleHotelTask(&#39;h12&#39;,this.checked)">
+      <label>Confirm final room count 30 days before wedding</label>
+    </div></div>
   </div>
 
   <!-- Second Hotel -->
@@ -836,108 +1224,108 @@ body{font-family:'Lato',sans-serif;background:var(--cream);color:var(--text);min
 
     <div class="vendor-card confirmed" id="vc-venue">
       <div class="vendor-name">⛳ The Georgia Club</div>
-      <div class="vendor-type">Select status: <select class="tbl-select" onchange="updateVendorStatus('vc-venue',this.value)"><option value="tbd">TBD</option><option value="pending">Pending</option><option value="confirmed" selected>Confirmed ✓</option></select></div>
+      <div class="vendor-type">Select status: <select class="tbl-select" onchange="updateVendorStatus(&#39;vc-venue&#39;,this.value)"><option value="tbd">TBD</option><option value="pending">Pending</option><option value="confirmed" selected="">Confirmed ✓</option></select></div>
       <div class="vendor-row"><strong>Address:</strong> 1050 Chancellors Drive, Statham, GA 30666</div>
       <div class="vendor-row"><strong>Phone:</strong> 770-725-3103</div>
       <div class="vendor-row"><strong>Website:</strong> thegeorgiaclub.com</div>
       <div class="vendor-row"><strong>Spaces:</strong> Wedding Garden (outdoor) · Village Hall (indoor) · Grand Ballroom reception</div>
       <div class="vendor-row"><strong>Capacity:</strong> Up to 300 guests</div>
-      <div class="vendor-row"><strong>Coordinator:</strong> <input class="tbl-input" id="v-venue-coord" placeholder="Coordinator name (ask for Campbell/Morgan)..." onchange="saveVendorNote('venue_coord',this.value)"></div>
-      <div class="vendor-row"><strong>Cost:</strong> <input class="tbl-input" id="v-venue-cost" placeholder="$0.00 total" onchange="saveVendorNote('venue_cost',this.value)"></div>
-      <div class="vendor-row"><strong>Notes:</strong> <input class="tbl-input" id="v-venue-notes" placeholder="Payment schedule, special details..." onchange="saveVendorNote('venue_notes',this.value)"></div>
+      <div class="vendor-row"><strong>Coordinator:</strong> <input class="tbl-input" id="v-venue-coord" placeholder="Coordinator name (ask for Campbell/Morgan)..." onchange="saveVendorNote(&#39;venue_coord&#39;,this.value)"></div>
+      <div class="vendor-row"><strong>Cost:</strong> <input class="tbl-input" id="v-venue-cost" placeholder="$0.00 total" onchange="saveVendorNote(&#39;venue_cost&#39;,this.value)"></div>
+      <div class="vendor-row"><strong>Notes:</strong> <input class="tbl-input" id="v-venue-notes" placeholder="Payment schedule, special details..." onchange="saveVendorNote(&#39;venue_notes&#39;,this.value)"></div>
     </div>
 
     <div class="vendor-card tbd" id="vc-photo">
       <div class="vendor-name">📸 Photographer</div>
-      <div class="vendor-type">Select status: <select class="tbl-select" onchange="updateVendorStatus('vc-photo',this.value)"><option value="tbd">TBD</option><option value="pending">Pending</option><option value="confirmed">Confirmed ✓</option></select></div>
-      <div class="vendor-row"><strong>Name:</strong> <input class="tbl-input" id="v-photo-name" placeholder="Photographer name..." onchange="saveVendorNote('photo_name',this.value)"></div>
-      <div class="vendor-row"><strong>Phone:</strong> <input class="tbl-input" id="v-photo-ph" placeholder="Phone..." onchange="saveVendorNote('photo_ph',this.value)"></div>
-      <div class="vendor-row"><strong>Cost:</strong> <input class="tbl-input" id="v-photo-cost" placeholder="$0.00" onchange="saveVendorNote('photo_cost',this.value)"></div>
-      <div class="vendor-row"><strong>Package:</strong> <input class="tbl-input" id="v-photo-notes" placeholder="Package details..." onchange="saveVendorNote('photo',this.value)"></div>
+      <div class="vendor-type">Select status: <select class="tbl-select" onchange="updateVendorStatus(&#39;vc-photo&#39;,this.value)"><option value="tbd">TBD</option><option value="pending">Pending</option><option value="confirmed">Confirmed ✓</option></select></div>
+      <div class="vendor-row"><strong>Name:</strong> <input class="tbl-input" id="v-photo-name" placeholder="Photographer name..." onchange="saveVendorNote(&#39;photo_name&#39;,this.value)"></div>
+      <div class="vendor-row"><strong>Phone:</strong> <input class="tbl-input" id="v-photo-ph" placeholder="Phone..." onchange="saveVendorNote(&#39;photo_ph&#39;,this.value)"></div>
+      <div class="vendor-row"><strong>Cost:</strong> <input class="tbl-input" id="v-photo-cost" placeholder="$0.00" onchange="saveVendorNote(&#39;photo_cost&#39;,this.value)"></div>
+      <div class="vendor-row"><strong>Package:</strong> <input class="tbl-input" id="v-photo-notes" placeholder="Package details..." onchange="saveVendorNote(&#39;photo&#39;,this.value)"></div>
     </div>
 
     <div class="vendor-card tbd" id="vc-dj">
       <div class="vendor-name">🎵 DJ / Entertainment</div>
-      <div class="vendor-type">Select status: <select class="tbl-select" onchange="updateVendorStatus('vc-dj',this.value)"><option value="tbd">TBD</option><option value="pending">Pending</option><option value="confirmed">Confirmed ✓</option></select></div>
-      <div class="vendor-row"><strong>Name:</strong> <input class="tbl-input" id="v-dj-name" placeholder="DJ / Band name..." onchange="saveVendorNote('dj_name',this.value)"></div>
-      <div class="vendor-row"><strong>Phone:</strong> <input class="tbl-input" id="v-dj-ph" placeholder="Phone..." onchange="saveVendorNote('dj_ph',this.value)"></div>
-      <div class="vendor-row"><strong>Cost:</strong> <input class="tbl-input" id="v-dj-cost" placeholder="$0.00" onchange="saveVendorNote('dj_cost',this.value)"></div>
-      <div class="vendor-row"><strong>Notes:</strong> <input class="tbl-input" id="v-dj-notes" placeholder="Hours, equipment, requests..." onchange="saveVendorNote('dj',this.value)"></div>
+      <div class="vendor-type">Select status: <select class="tbl-select" onchange="updateVendorStatus(&#39;vc-dj&#39;,this.value)"><option value="tbd">TBD</option><option value="pending">Pending</option><option value="confirmed">Confirmed ✓</option></select></div>
+      <div class="vendor-row"><strong>Name:</strong> <input class="tbl-input" id="v-dj-name" placeholder="DJ / Band name..." onchange="saveVendorNote(&#39;dj_name&#39;,this.value)"></div>
+      <div class="vendor-row"><strong>Phone:</strong> <input class="tbl-input" id="v-dj-ph" placeholder="Phone..." onchange="saveVendorNote(&#39;dj_ph&#39;,this.value)"></div>
+      <div class="vendor-row"><strong>Cost:</strong> <input class="tbl-input" id="v-dj-cost" placeholder="$0.00" onchange="saveVendorNote(&#39;dj_cost&#39;,this.value)"></div>
+      <div class="vendor-row"><strong>Notes:</strong> <input class="tbl-input" id="v-dj-notes" placeholder="Hours, equipment, requests..." onchange="saveVendorNote(&#39;dj&#39;,this.value)"></div>
     </div>
 
     <div class="vendor-card tbd" id="vc-catering">
       <div class="vendor-name">🍽️ Caterer</div>
-      <div class="vendor-type">Select status: <select class="tbl-select" onchange="updateVendorStatus('vc-catering',this.value)"><option value="tbd">TBD</option><option value="pending">Pending</option><option value="confirmed">Confirmed ✓</option></select></div>
-      <div class="vendor-row"><strong>Name:</strong> <input class="tbl-input" id="v-caterer" placeholder="Caterer name..." onchange="saveVendorNote('caterer',this.value)"></div>
-      <div class="vendor-row"><strong>Phone:</strong> <input class="tbl-input" id="v-cat-ph" placeholder="Phone..." onchange="saveVendorNote('cat_ph',this.value)"></div>
-      <div class="vendor-row"><strong>Per Person:</strong> <input class="tbl-input" id="v-cat-pp" placeholder="$__ / person" onchange="saveVendorNote('cat_pp',this.value)"></div>
-      <div class="vendor-row"><strong>Notes:</strong> <input class="tbl-input" id="v-cat-notes" placeholder="Menu, # guests, style..." onchange="saveVendorNote('cat_notes',this.value)"></div>
+      <div class="vendor-type">Select status: <select class="tbl-select" onchange="updateVendorStatus(&#39;vc-catering&#39;,this.value)"><option value="tbd">TBD</option><option value="pending">Pending</option><option value="confirmed">Confirmed ✓</option></select></div>
+      <div class="vendor-row"><strong>Name:</strong> <input class="tbl-input" id="v-caterer" placeholder="Caterer name..." onchange="saveVendorNote(&#39;caterer&#39;,this.value)"></div>
+      <div class="vendor-row"><strong>Phone:</strong> <input class="tbl-input" id="v-cat-ph" placeholder="Phone..." onchange="saveVendorNote(&#39;cat_ph&#39;,this.value)"></div>
+      <div class="vendor-row"><strong>Per Person:</strong> <input class="tbl-input" id="v-cat-pp" placeholder="$__ / person" onchange="saveVendorNote(&#39;cat_pp&#39;,this.value)"></div>
+      <div class="vendor-row"><strong>Notes:</strong> <input class="tbl-input" id="v-cat-notes" placeholder="Menu, # guests, style..." onchange="saveVendorNote(&#39;cat_notes&#39;,this.value)"></div>
     </div>
 
     <div class="vendor-card tbd" id="vc-floral">
       <div class="vendor-name">💐 Florist</div>
-      <div class="vendor-type">Select status: <select class="tbl-select" onchange="updateVendorStatus('vc-floral',this.value)"><option value="tbd">TBD</option><option value="pending">Pending</option><option value="confirmed">Confirmed ✓</option></select></div>
-      <div class="vendor-row"><strong>Name:</strong> <input class="tbl-input" id="v-floral-name" placeholder="Florist name..." onchange="saveVendorNote('floral_name',this.value)"></div>
-      <div class="vendor-row"><strong>Phone:</strong> <input class="tbl-input" id="v-floral-ph" placeholder="Phone..." onchange="saveVendorNote('floral_ph',this.value)"></div>
-      <div class="vendor-row"><strong>Cost:</strong> <input class="tbl-input" id="v-floral-cost" placeholder="$0.00" onchange="saveVendorNote('floral_cost',this.value)"></div>
-      <div class="vendor-row"><strong>Notes:</strong> <input class="tbl-input" id="v-floral-notes" placeholder="Bouquets, centerpieces..." onchange="saveVendorNote('floral',this.value)"></div>
+      <div class="vendor-type">Select status: <select class="tbl-select" onchange="updateVendorStatus(&#39;vc-floral&#39;,this.value)"><option value="tbd">TBD</option><option value="pending">Pending</option><option value="confirmed">Confirmed ✓</option></select></div>
+      <div class="vendor-row"><strong>Name:</strong> <input class="tbl-input" id="v-floral-name" placeholder="Florist name..." onchange="saveVendorNote(&#39;floral_name&#39;,this.value)"></div>
+      <div class="vendor-row"><strong>Phone:</strong> <input class="tbl-input" id="v-floral-ph" placeholder="Phone..." onchange="saveVendorNote(&#39;floral_ph&#39;,this.value)"></div>
+      <div class="vendor-row"><strong>Cost:</strong> <input class="tbl-input" id="v-floral-cost" placeholder="$0.00" onchange="saveVendorNote(&#39;floral_cost&#39;,this.value)"></div>
+      <div class="vendor-row"><strong>Notes:</strong> <input class="tbl-input" id="v-floral-notes" placeholder="Bouquets, centerpieces..." onchange="saveVendorNote(&#39;floral&#39;,this.value)"></div>
     </div>
 
     <div class="vendor-card tbd" id="vc-offic">
       <div class="vendor-name">🙏 Officiant / Minister</div>
-      <div class="vendor-type">Select status: <select class="tbl-select" onchange="updateVendorStatus('vc-offic',this.value)"><option value="tbd">TBD</option><option value="pending">Pending</option><option value="confirmed">Confirmed ✓</option></select></div>
-      <div class="vendor-row"><strong>Name:</strong> <input class="tbl-input" id="v-offic-name" placeholder="Name..." onchange="saveVendorNote('offic',this.value)"></div>
-      <div class="vendor-row"><strong>Phone:</strong> <input class="tbl-input" id="v-offic-phone" placeholder="Phone..." onchange="saveVendorNote('offic_ph',this.value)"></div>
-      <div class="vendor-row"><strong>Cost:</strong> <input class="tbl-input" id="v-offic-cost" placeholder="$0.00" onchange="saveVendorNote('offic_cost',this.value)"></div>
+      <div class="vendor-type">Select status: <select class="tbl-select" onchange="updateVendorStatus(&#39;vc-offic&#39;,this.value)"><option value="tbd">TBD</option><option value="pending">Pending</option><option value="confirmed">Confirmed ✓</option></select></div>
+      <div class="vendor-row"><strong>Name:</strong> <input class="tbl-input" id="v-offic-name" placeholder="Name..." onchange="saveVendorNote(&#39;offic&#39;,this.value)"></div>
+      <div class="vendor-row"><strong>Phone:</strong> <input class="tbl-input" id="v-offic-phone" placeholder="Phone..." onchange="saveVendorNote(&#39;offic_ph&#39;,this.value)"></div>
+      <div class="vendor-row"><strong>Cost:</strong> <input class="tbl-input" id="v-offic-cost" placeholder="$0.00" onchange="saveVendorNote(&#39;offic_cost&#39;,this.value)"></div>
     </div>
 
     <div class="vendor-card tbd" id="vc-hmu">
       <div class="vendor-name">💄 Hair &amp; Makeup</div>
-      <div class="vendor-type">Select status: <select class="tbl-select" onchange="updateVendorStatus('vc-hmu',this.value)"><option value="tbd">TBD</option><option value="pending">Pending</option><option value="confirmed">Confirmed ✓</option></select></div>
-      <div class="vendor-row"><strong>Name:</strong> <input class="tbl-input" id="v-hmu-name" placeholder="Artist name..." onchange="saveVendorNote('hmu',this.value)"></div>
-      <div class="vendor-row"><strong>Phone:</strong> <input class="tbl-input" id="v-hmu-phone" placeholder="Phone..." onchange="saveVendorNote('hmu_ph',this.value)"></div>
-      <div class="vendor-row"><strong>Cost:</strong> <input class="tbl-input" id="v-hmu-cost" placeholder="$0.00" onchange="saveVendorNote('hmu_cost',this.value)"></div>
-      <div class="vendor-row"><strong>Trial:</strong> <input class="tbl-input" id="v-hmu-trial" placeholder="Trial date..." onchange="saveVendorNote('hmu_trial',this.value)"></div>
+      <div class="vendor-type">Select status: <select class="tbl-select" onchange="updateVendorStatus(&#39;vc-hmu&#39;,this.value)"><option value="tbd">TBD</option><option value="pending">Pending</option><option value="confirmed">Confirmed ✓</option></select></div>
+      <div class="vendor-row"><strong>Name:</strong> <input class="tbl-input" id="v-hmu-name" placeholder="Artist name..." onchange="saveVendorNote(&#39;hmu&#39;,this.value)"></div>
+      <div class="vendor-row"><strong>Phone:</strong> <input class="tbl-input" id="v-hmu-phone" placeholder="Phone..." onchange="saveVendorNote(&#39;hmu_ph&#39;,this.value)"></div>
+      <div class="vendor-row"><strong>Cost:</strong> <input class="tbl-input" id="v-hmu-cost" placeholder="$0.00" onchange="saveVendorNote(&#39;hmu_cost&#39;,this.value)"></div>
+      <div class="vendor-row"><strong>Trial:</strong> <input class="tbl-input" id="v-hmu-trial" placeholder="Trial date..." onchange="saveVendorNote(&#39;hmu_trial&#39;,this.value)"></div>
     </div>
 
     <div class="vendor-card tbd" id="vc-vid">
       <div class="vendor-name">🎬 Videographer</div>
-      <div class="vendor-type">Select status: <select class="tbl-select" onchange="updateVendorStatus('vc-vid',this.value)"><option value="tbd">TBD</option><option value="pending">Pending</option><option value="confirmed">Confirmed ✓</option></select></div>
-      <div class="vendor-row"><strong>Name:</strong> <input class="tbl-input" id="v-vid-name" placeholder="Name..." onchange="saveVendorNote('vid',this.value)"></div>
-      <div class="vendor-row"><strong>Cost:</strong> <input class="tbl-input" id="v-vid-cost" placeholder="$0.00" onchange="saveVendorNote('vid_cost',this.value)"></div>
-      <div class="vendor-row"><strong>Notes:</strong> <input class="tbl-input" id="v-vid-notes" placeholder="Package, delivery time..." onchange="saveVendorNote('vid_notes',this.value)"></div>
+      <div class="vendor-type">Select status: <select class="tbl-select" onchange="updateVendorStatus(&#39;vc-vid&#39;,this.value)"><option value="tbd">TBD</option><option value="pending">Pending</option><option value="confirmed">Confirmed ✓</option></select></div>
+      <div class="vendor-row"><strong>Name:</strong> <input class="tbl-input" id="v-vid-name" placeholder="Name..." onchange="saveVendorNote(&#39;vid&#39;,this.value)"></div>
+      <div class="vendor-row"><strong>Cost:</strong> <input class="tbl-input" id="v-vid-cost" placeholder="$0.00" onchange="saveVendorNote(&#39;vid_cost&#39;,this.value)"></div>
+      <div class="vendor-row"><strong>Notes:</strong> <input class="tbl-input" id="v-vid-notes" placeholder="Package, delivery time..." onchange="saveVendorNote(&#39;vid_notes&#39;,this.value)"></div>
     </div>
 
     <div class="vendor-card tbd" id="vc-dress">
       <div class="vendor-name">👗 Wedding Dress</div>
-      <div class="vendor-type">Select status: <select class="tbl-select" onchange="updateVendorStatus('vc-dress',this.value)"><option value="tbd">TBD</option><option value="pending">Pending</option><option value="confirmed">Confirmed ✓</option></select></div>
-      <div class="vendor-row"><strong>Shop:</strong> <input class="tbl-input" id="v-dress-shop" placeholder="Boutique name..." onchange="saveVendorNote('dress',this.value)"></div>
-      <div class="vendor-row"><strong>Cost:</strong> <input class="tbl-input" id="v-dress-cost" placeholder="$0.00" onchange="saveVendorNote('dress_cost',this.value)"></div>
-      <div class="vendor-row"><strong>Final Fitting:</strong> <input class="tbl-input" id="v-dress-fit" placeholder="Date..." onchange="saveVendorNote('dress_fit',this.value)"></div>
+      <div class="vendor-type">Select status: <select class="tbl-select" onchange="updateVendorStatus(&#39;vc-dress&#39;,this.value)"><option value="tbd">TBD</option><option value="pending">Pending</option><option value="confirmed">Confirmed ✓</option></select></div>
+      <div class="vendor-row"><strong>Shop:</strong> <input class="tbl-input" id="v-dress-shop" placeholder="Boutique name..." onchange="saveVendorNote(&#39;dress&#39;,this.value)"></div>
+      <div class="vendor-row"><strong>Cost:</strong> <input class="tbl-input" id="v-dress-cost" placeholder="$0.00" onchange="saveVendorNote(&#39;dress_cost&#39;,this.value)"></div>
+      <div class="vendor-row"><strong>Final Fitting:</strong> <input class="tbl-input" id="v-dress-fit" placeholder="Date..." onchange="saveVendorNote(&#39;dress_fit&#39;,this.value)"></div>
     </div>
 
     <div class="vendor-card tbd" id="vc-reh">
       <div class="vendor-name">🍽️ Rehearsal Dinner</div>
-      <div class="vendor-type">Select status: <select class="tbl-select" onchange="updateVendorStatus('vc-reh',this.value)"><option value="tbd">TBD</option><option value="pending">Pending</option><option value="confirmed">Confirmed ✓</option></select></div>
-      <div class="vendor-row"><strong>Venue:</strong> <input class="tbl-input" id="v-reh-venue" placeholder="Restaurant/venue..." onchange="saveVendorNote('reh',this.value)"></div>
-      <div class="vendor-row"><strong>Time:</strong> <input class="tbl-input" id="v-reh-time" placeholder="Date & time..." onchange="saveVendorNote('reh_time',this.value)"></div>
-      <div class="vendor-row"><strong>Cost:</strong> <input class="tbl-input" id="v-reh-cost" placeholder="$0.00" onchange="saveVendorNote('reh_cost',this.value)"></div>
+      <div class="vendor-type">Select status: <select class="tbl-select" onchange="updateVendorStatus(&#39;vc-reh&#39;,this.value)"><option value="tbd">TBD</option><option value="pending">Pending</option><option value="confirmed">Confirmed ✓</option></select></div>
+      <div class="vendor-row"><strong>Venue:</strong> <input class="tbl-input" id="v-reh-venue" placeholder="Restaurant/venue..." onchange="saveVendorNote(&#39;reh&#39;,this.value)"></div>
+      <div class="vendor-row"><strong>Time:</strong> <input class="tbl-input" id="v-reh-time" placeholder="Date &amp; time..." onchange="saveVendorNote(&#39;reh_time&#39;,this.value)"></div>
+      <div class="vendor-row"><strong>Cost:</strong> <input class="tbl-input" id="v-reh-cost" placeholder="$0.00" onchange="saveVendorNote(&#39;reh_cost&#39;,this.value)"></div>
     </div>
 
     <div class="vendor-card tbd" id="vc-fri">
       <div class="vendor-name">🎉 Friday Night Event</div>
-      <div class="vendor-type">Select status: <select class="tbl-select" onchange="updateVendorStatus('vc-fri',this.value)"><option value="tbd">TBD</option><option value="pending">Pending</option><option value="confirmed">Confirmed ✓</option></select></div>
-      <div class="vendor-row"><strong>Venue:</strong> <input class="tbl-input" id="v-fri-venue" placeholder="Location..." onchange="saveVendorNote('fri',this.value)"></div>
-      <div class="vendor-row"><strong>Time:</strong> <input class="tbl-input" id="v-fri-time" placeholder="Date & time..." onchange="saveVendorNote('fri_time',this.value)"></div>
-      <div class="vendor-row"><strong>Notes:</strong> <input class="tbl-input" id="v-fri-notes" placeholder="Details..." onchange="saveVendorNote('fri_notes',this.value)"></div>
+      <div class="vendor-type">Select status: <select class="tbl-select" onchange="updateVendorStatus(&#39;vc-fri&#39;,this.value)"><option value="tbd">TBD</option><option value="pending">Pending</option><option value="confirmed">Confirmed ✓</option></select></div>
+      <div class="vendor-row"><strong>Venue:</strong> <input class="tbl-input" id="v-fri-venue" placeholder="Location..." onchange="saveVendorNote(&#39;fri&#39;,this.value)"></div>
+      <div class="vendor-row"><strong>Time:</strong> <input class="tbl-input" id="v-fri-time" placeholder="Date &amp; time..." onchange="saveVendorNote(&#39;fri_time&#39;,this.value)"></div>
+      <div class="vendor-row"><strong>Notes:</strong> <input class="tbl-input" id="v-fri-notes" placeholder="Details..." onchange="saveVendorNote(&#39;fri_notes&#39;,this.value)"></div>
     </div>
 
     <div class="vendor-card tbd" id="vc-honey">
       <div class="vendor-name">✈️ Honeymoon</div>
-      <div class="vendor-type">Select status: <select class="tbl-select" onchange="updateVendorStatus('vc-honey',this.value)"><option value="tbd">TBD</option><option value="pending">Pending</option><option value="confirmed">Confirmed ✓</option></select></div>
-      <div class="vendor-row"><strong>Destination:</strong> <input class="tbl-input" id="v-honey-dest" placeholder="Destination..." onchange="saveVendorNote('honey',this.value)"></div>
-      <div class="vendor-row"><strong>Dates:</strong> <input class="tbl-input" id="v-honey-dates" placeholder="Depart – Return..." onchange="saveVendorNote('honey_dates',this.value)"></div>
-      <div class="vendor-row"><strong>Budget:</strong> <input class="tbl-input" id="v-honey-cost" placeholder="$0.00" onchange="saveVendorNote('honey_cost',this.value)"></div>
+      <div class="vendor-type">Select status: <select class="tbl-select" onchange="updateVendorStatus(&#39;vc-honey&#39;,this.value)"><option value="tbd">TBD</option><option value="pending">Pending</option><option value="confirmed">Confirmed ✓</option></select></div>
+      <div class="vendor-row"><strong>Destination:</strong> <input class="tbl-input" id="v-honey-dest" placeholder="Destination..." onchange="saveVendorNote(&#39;honey&#39;,this.value)"></div>
+      <div class="vendor-row"><strong>Dates:</strong> <input class="tbl-input" id="v-honey-dates" placeholder="Depart – Return..." onchange="saveVendorNote(&#39;honey_dates&#39;,this.value)"></div>
+      <div class="vendor-row"><strong>Budget:</strong> <input class="tbl-input" id="v-honey-cost" placeholder="$0.00" onchange="saveVendorNote(&#39;honey_cost&#39;,this.value)"></div>
     </div>
 
   </div>
@@ -951,7 +1339,7 @@ body{font-family:'Lato',sans-serif;background:var(--cream);color:var(--text);min
     <div class="lock-icon">🔒</div>
     <div class="lock-title">Private Finance Area</div>
     <div class="lock-sub">Enter the password to access budget &amp; payment tracking</div>
-    <input class="pw-input" type="password" id="pw-input" placeholder="••••••••••" onkeydown="if(event.key==='Enter')checkPw()">
+    <input class="pw-input" type="password" id="pw-input" placeholder="••••••••••" onkeydown="if(event.key===&#39;Enter&#39;)checkPw()">
     <div class="pw-err" id="pw-err">Incorrect password. Try again.</div>
     <button class="btn" onclick="checkPw()">🔓 Unlock</button>
   </div>
@@ -960,15 +1348,31 @@ body{font-family:'Lato',sans-serif;background:var(--cream);color:var(--text);min
     <!-- Cost Breakdown Summary -->
     <div class="card" style="padding:0;overflow:hidden;margin-bottom:0;">
       <div style="padding:16px 20px 10px;"><div class="card-title" style="margin-bottom:2px;">📊 Cost Summary</div></div>
-      <div id="fin-breakdown-table" style="padding:0 16px 16px;"></div>
+      <div id="fin-breakdown-table" style="padding:0 16px 16px;"><table style="width:100%;border-collapse:collapse;font-size:.88em;">
+    <thead><tr style="background:var(--purple-dark);color:#fff;">
+      <th style="padding:7px 10px;text-align:left;">Vendor</th>
+      <th style="padding:7px 10px;text-align:left;">Description</th>
+      <th style="padding:7px 10px;text-align:right;">Amount</th>
+      <th style="padding:7px 10px;text-align:right;">Paid</th>
+      <th style="padding:7px 10px;text-align:right;">Balance</th>
+      <th style="padding:7px 10px;text-align:center;">Status</th>
+    </tr></thead>
+    <tbody><tr style="background:var(--purple);color:#fff;font-weight:700;">
+    <td colspan="2" style="padding:9px 10px;">TOTAL</td>
+    <td style="padding:9px 10px;text-align:right;">$0.00</td>
+    <td style="padding:9px 10px;text-align:right;">$0.00</td>
+    <td style="padding:9px 10px;text-align:right;">$0.00</td>
+    <td style="padding:9px 10px;"></td>
+  </tr></tbody>
+  </table></div>
     </div>
 
     <!-- Budget Summary -->
     <div class="stats-grid">
-      <div class="stat o"><span class="stat-n" id="fin-total-budget">--</span><span class="stat-l">Total Budget</span></div>
-      <div class="stat p"><span class="stat-n" id="fin-committed">--</span><span class="stat-l">Committed</span></div>
-      <div class="stat g"><span class="stat-n" id="fin-paid">--</span><span class="stat-l">Total Paid</span></div>
-      <div class="stat"><span class="stat-n" id="fin-remaining">--</span><span class="stat-l">Still Due</span></div>
+      <div class="stat o"><span class="stat-n" id="fin-total-budget">—</span><span class="stat-l">Total Budget</span></div>
+      <div class="stat p"><span class="stat-n" id="fin-committed">$0.00</span><span class="stat-l">Committed</span></div>
+      <div class="stat g"><span class="stat-n" id="fin-paid">$0.00</span><span class="stat-l">Total Paid</span></div>
+      <div class="stat"><span class="stat-n" id="fin-remaining">$0.00</span><span class="stat-l">Still Due</span></div>
     </div>
 
     <!-- Budget Input -->
@@ -988,7 +1392,259 @@ body{font-family:'Lato',sans-serif;background:var(--cream);color:var(--text);min
       <div class="pay-grid hdr">
         <div>Vendor / Description</div><div>Amount Due</div><div>Due Date</div><div>Paid Amount</div><div>Method</div><div>Done</div>
       </div>
-      <div id="payment-rows"></div>
+      <div id="payment-rows">
+    <div class="pay-grid" style="">
+      <div>
+        <input class="tbl-input" value="Venue" placeholder="Vendor..." style="font-weight:700;margin-bottom:3px;" onchange="updatePayment(0,&#39;vendor&#39;,this.value)">
+        <input class="tbl-input" value="Booking deposit" placeholder="Description..." style="font-size:.8em;" onchange="updatePayment(0,&#39;desc&#39;,this.value)">
+      </div>
+      <div style="display:flex;align-items:center;gap:2px;"><span style="color:var(--text-light);font-size:.9em;">$</span><input type="text" class="tbl-input currency-input" value="" placeholder="0.00" style="min-width:80px;" onfocus="stripFmt(this)" onblur="applyFmt(this,0,&#39;amount&#39;)" onchange="updatePayment(0,&#39;amount&#39;,parseCurrency(this.value))"></div>
+      <div><input type="date" class="tbl-input" value="" onchange="updatePayment(0,&#39;due&#39;,this.value)"></div>
+      <div style="display:flex;align-items:center;gap:2px;"><span style="color:var(--text-light);font-size:.9em;">$</span><input type="text" class="tbl-input currency-input" value="" placeholder="0.00" style="min-width:80px;" onfocus="stripFmt(this)" onblur="applyFmt(this,0,&#39;paid&#39;)" onchange="updatePayment(0,&#39;paid&#39;,parseCurrency(this.value))"></div>
+      <div><select class="tbl-select" onchange="updatePayment(0,&#39;method&#39;,this.value)">
+        <option value="">—</option>
+        <option value="Check">Check</option><option value="Credit Card">Credit Card</option><option value="Debit Card">Debit Card</option><option value="Bank Transfer">Bank Transfer</option><option value="Cash">Cash</option><option value="Zelle">Zelle</option><option value="Venmo">Venmo</option>
+      </select></div>
+      <div style="text-align:center;"><input type="checkbox" style="accent-color:var(--orange);width:17px;height:17px;" onchange="updatePayment(0,&#39;done&#39;,this.checked)" title="Mark paid"></div>
+    </div>
+    <div class="pay-grid" style="">
+      <div>
+        <input class="tbl-input" value="Venue" placeholder="Vendor..." style="font-weight:700;margin-bottom:3px;" onchange="updatePayment(1,&#39;vendor&#39;,this.value)">
+        <input class="tbl-input" value="Payment 2" placeholder="Description..." style="font-size:.8em;" onchange="updatePayment(1,&#39;desc&#39;,this.value)">
+      </div>
+      <div style="display:flex;align-items:center;gap:2px;"><span style="color:var(--text-light);font-size:.9em;">$</span><input type="text" class="tbl-input currency-input" value="" placeholder="0.00" style="min-width:80px;" onfocus="stripFmt(this)" onblur="applyFmt(this,1,&#39;amount&#39;)" onchange="updatePayment(1,&#39;amount&#39;,parseCurrency(this.value))"></div>
+      <div><input type="date" class="tbl-input" value="" onchange="updatePayment(1,&#39;due&#39;,this.value)"></div>
+      <div style="display:flex;align-items:center;gap:2px;"><span style="color:var(--text-light);font-size:.9em;">$</span><input type="text" class="tbl-input currency-input" value="" placeholder="0.00" style="min-width:80px;" onfocus="stripFmt(this)" onblur="applyFmt(this,1,&#39;paid&#39;)" onchange="updatePayment(1,&#39;paid&#39;,parseCurrency(this.value))"></div>
+      <div><select class="tbl-select" onchange="updatePayment(1,&#39;method&#39;,this.value)">
+        <option value="">—</option>
+        <option value="Check">Check</option><option value="Credit Card">Credit Card</option><option value="Debit Card">Debit Card</option><option value="Bank Transfer">Bank Transfer</option><option value="Cash">Cash</option><option value="Zelle">Zelle</option><option value="Venmo">Venmo</option>
+      </select></div>
+      <div style="text-align:center;"><input type="checkbox" style="accent-color:var(--orange);width:17px;height:17px;" onchange="updatePayment(1,&#39;done&#39;,this.checked)" title="Mark paid"></div>
+    </div>
+    <div class="pay-grid" style="">
+      <div>
+        <input class="tbl-input" value="Venue" placeholder="Vendor..." style="font-weight:700;margin-bottom:3px;" onchange="updatePayment(2,&#39;vendor&#39;,this.value)">
+        <input class="tbl-input" value="Final balance" placeholder="Description..." style="font-size:.8em;" onchange="updatePayment(2,&#39;desc&#39;,this.value)">
+      </div>
+      <div style="display:flex;align-items:center;gap:2px;"><span style="color:var(--text-light);font-size:.9em;">$</span><input type="text" class="tbl-input currency-input" value="" placeholder="0.00" style="min-width:80px;" onfocus="stripFmt(this)" onblur="applyFmt(this,2,&#39;amount&#39;)" onchange="updatePayment(2,&#39;amount&#39;,parseCurrency(this.value))"></div>
+      <div><input type="date" class="tbl-input" value="" onchange="updatePayment(2,&#39;due&#39;,this.value)"></div>
+      <div style="display:flex;align-items:center;gap:2px;"><span style="color:var(--text-light);font-size:.9em;">$</span><input type="text" class="tbl-input currency-input" value="" placeholder="0.00" style="min-width:80px;" onfocus="stripFmt(this)" onblur="applyFmt(this,2,&#39;paid&#39;)" onchange="updatePayment(2,&#39;paid&#39;,parseCurrency(this.value))"></div>
+      <div><select class="tbl-select" onchange="updatePayment(2,&#39;method&#39;,this.value)">
+        <option value="">—</option>
+        <option value="Check">Check</option><option value="Credit Card">Credit Card</option><option value="Debit Card">Debit Card</option><option value="Bank Transfer">Bank Transfer</option><option value="Cash">Cash</option><option value="Zelle">Zelle</option><option value="Venmo">Venmo</option>
+      </select></div>
+      <div style="text-align:center;"><input type="checkbox" style="accent-color:var(--orange);width:17px;height:17px;" onchange="updatePayment(2,&#39;done&#39;,this.checked)" title="Mark paid"></div>
+    </div>
+    <div class="pay-grid" style="">
+      <div>
+        <input class="tbl-input" value="Photographer" placeholder="Vendor..." style="font-weight:700;margin-bottom:3px;" onchange="updatePayment(3,&#39;vendor&#39;,this.value)">
+        <input class="tbl-input" value="Deposit" placeholder="Description..." style="font-size:.8em;" onchange="updatePayment(3,&#39;desc&#39;,this.value)">
+      </div>
+      <div style="display:flex;align-items:center;gap:2px;"><span style="color:var(--text-light);font-size:.9em;">$</span><input type="text" class="tbl-input currency-input" value="" placeholder="0.00" style="min-width:80px;" onfocus="stripFmt(this)" onblur="applyFmt(this,3,&#39;amount&#39;)" onchange="updatePayment(3,&#39;amount&#39;,parseCurrency(this.value))"></div>
+      <div><input type="date" class="tbl-input" value="" onchange="updatePayment(3,&#39;due&#39;,this.value)"></div>
+      <div style="display:flex;align-items:center;gap:2px;"><span style="color:var(--text-light);font-size:.9em;">$</span><input type="text" class="tbl-input currency-input" value="" placeholder="0.00" style="min-width:80px;" onfocus="stripFmt(this)" onblur="applyFmt(this,3,&#39;paid&#39;)" onchange="updatePayment(3,&#39;paid&#39;,parseCurrency(this.value))"></div>
+      <div><select class="tbl-select" onchange="updatePayment(3,&#39;method&#39;,this.value)">
+        <option value="">—</option>
+        <option value="Check">Check</option><option value="Credit Card">Credit Card</option><option value="Debit Card">Debit Card</option><option value="Bank Transfer">Bank Transfer</option><option value="Cash">Cash</option><option value="Zelle">Zelle</option><option value="Venmo">Venmo</option>
+      </select></div>
+      <div style="text-align:center;"><input type="checkbox" style="accent-color:var(--orange);width:17px;height:17px;" onchange="updatePayment(3,&#39;done&#39;,this.checked)" title="Mark paid"></div>
+    </div>
+    <div class="pay-grid" style="">
+      <div>
+        <input class="tbl-input" value="Photographer" placeholder="Vendor..." style="font-weight:700;margin-bottom:3px;" onchange="updatePayment(4,&#39;vendor&#39;,this.value)">
+        <input class="tbl-input" value="Final balance" placeholder="Description..." style="font-size:.8em;" onchange="updatePayment(4,&#39;desc&#39;,this.value)">
+      </div>
+      <div style="display:flex;align-items:center;gap:2px;"><span style="color:var(--text-light);font-size:.9em;">$</span><input type="text" class="tbl-input currency-input" value="" placeholder="0.00" style="min-width:80px;" onfocus="stripFmt(this)" onblur="applyFmt(this,4,&#39;amount&#39;)" onchange="updatePayment(4,&#39;amount&#39;,parseCurrency(this.value))"></div>
+      <div><input type="date" class="tbl-input" value="" onchange="updatePayment(4,&#39;due&#39;,this.value)"></div>
+      <div style="display:flex;align-items:center;gap:2px;"><span style="color:var(--text-light);font-size:.9em;">$</span><input type="text" class="tbl-input currency-input" value="" placeholder="0.00" style="min-width:80px;" onfocus="stripFmt(this)" onblur="applyFmt(this,4,&#39;paid&#39;)" onchange="updatePayment(4,&#39;paid&#39;,parseCurrency(this.value))"></div>
+      <div><select class="tbl-select" onchange="updatePayment(4,&#39;method&#39;,this.value)">
+        <option value="">—</option>
+        <option value="Check">Check</option><option value="Credit Card">Credit Card</option><option value="Debit Card">Debit Card</option><option value="Bank Transfer">Bank Transfer</option><option value="Cash">Cash</option><option value="Zelle">Zelle</option><option value="Venmo">Venmo</option>
+      </select></div>
+      <div style="text-align:center;"><input type="checkbox" style="accent-color:var(--orange);width:17px;height:17px;" onchange="updatePayment(4,&#39;done&#39;,this.checked)" title="Mark paid"></div>
+    </div>
+    <div class="pay-grid" style="">
+      <div>
+        <input class="tbl-input" value="Officiant / Minister" placeholder="Vendor..." style="font-weight:700;margin-bottom:3px;" onchange="updatePayment(5,&#39;vendor&#39;,this.value)">
+        <input class="tbl-input" value="" placeholder="Description..." style="font-size:.8em;" onchange="updatePayment(5,&#39;desc&#39;,this.value)">
+      </div>
+      <div style="display:flex;align-items:center;gap:2px;"><span style="color:var(--text-light);font-size:.9em;">$</span><input type="text" class="tbl-input currency-input" value="" placeholder="0.00" style="min-width:80px;" onfocus="stripFmt(this)" onblur="applyFmt(this,5,&#39;amount&#39;)" onchange="updatePayment(5,&#39;amount&#39;,parseCurrency(this.value))"></div>
+      <div><input type="date" class="tbl-input" value="" onchange="updatePayment(5,&#39;due&#39;,this.value)"></div>
+      <div style="display:flex;align-items:center;gap:2px;"><span style="color:var(--text-light);font-size:.9em;">$</span><input type="text" class="tbl-input currency-input" value="" placeholder="0.00" style="min-width:80px;" onfocus="stripFmt(this)" onblur="applyFmt(this,5,&#39;paid&#39;)" onchange="updatePayment(5,&#39;paid&#39;,parseCurrency(this.value))"></div>
+      <div><select class="tbl-select" onchange="updatePayment(5,&#39;method&#39;,this.value)">
+        <option value="">—</option>
+        <option value="Check">Check</option><option value="Credit Card">Credit Card</option><option value="Debit Card">Debit Card</option><option value="Bank Transfer">Bank Transfer</option><option value="Cash">Cash</option><option value="Zelle">Zelle</option><option value="Venmo">Venmo</option>
+      </select></div>
+      <div style="text-align:center;"><input type="checkbox" style="accent-color:var(--orange);width:17px;height:17px;" onchange="updatePayment(5,&#39;done&#39;,this.checked)" title="Mark paid"></div>
+    </div>
+    <div class="pay-grid" style="">
+      <div>
+        <input class="tbl-input" value="Catering" placeholder="Vendor..." style="font-weight:700;margin-bottom:3px;" onchange="updatePayment(6,&#39;vendor&#39;,this.value)">
+        <input class="tbl-input" value="" placeholder="Description..." style="font-size:.8em;" onchange="updatePayment(6,&#39;desc&#39;,this.value)">
+      </div>
+      <div style="display:flex;align-items:center;gap:2px;"><span style="color:var(--text-light);font-size:.9em;">$</span><input type="text" class="tbl-input currency-input" value="" placeholder="0.00" style="min-width:80px;" onfocus="stripFmt(this)" onblur="applyFmt(this,6,&#39;amount&#39;)" onchange="updatePayment(6,&#39;amount&#39;,parseCurrency(this.value))"></div>
+      <div><input type="date" class="tbl-input" value="" onchange="updatePayment(6,&#39;due&#39;,this.value)"></div>
+      <div style="display:flex;align-items:center;gap:2px;"><span style="color:var(--text-light);font-size:.9em;">$</span><input type="text" class="tbl-input currency-input" value="" placeholder="0.00" style="min-width:80px;" onfocus="stripFmt(this)" onblur="applyFmt(this,6,&#39;paid&#39;)" onchange="updatePayment(6,&#39;paid&#39;,parseCurrency(this.value))"></div>
+      <div><select class="tbl-select" onchange="updatePayment(6,&#39;method&#39;,this.value)">
+        <option value="">—</option>
+        <option value="Check">Check</option><option value="Credit Card">Credit Card</option><option value="Debit Card">Debit Card</option><option value="Bank Transfer">Bank Transfer</option><option value="Cash">Cash</option><option value="Zelle">Zelle</option><option value="Venmo">Venmo</option>
+      </select></div>
+      <div style="text-align:center;"><input type="checkbox" style="accent-color:var(--orange);width:17px;height:17px;" onchange="updatePayment(6,&#39;done&#39;,this.checked)" title="Mark paid"></div>
+    </div>
+    <div class="pay-grid" style="">
+      <div>
+        <input class="tbl-input" value="DJ / Entertainment" placeholder="Vendor..." style="font-weight:700;margin-bottom:3px;" onchange="updatePayment(7,&#39;vendor&#39;,this.value)">
+        <input class="tbl-input" value="" placeholder="Description..." style="font-size:.8em;" onchange="updatePayment(7,&#39;desc&#39;,this.value)">
+      </div>
+      <div style="display:flex;align-items:center;gap:2px;"><span style="color:var(--text-light);font-size:.9em;">$</span><input type="text" class="tbl-input currency-input" value="" placeholder="0.00" style="min-width:80px;" onfocus="stripFmt(this)" onblur="applyFmt(this,7,&#39;amount&#39;)" onchange="updatePayment(7,&#39;amount&#39;,parseCurrency(this.value))"></div>
+      <div><input type="date" class="tbl-input" value="" onchange="updatePayment(7,&#39;due&#39;,this.value)"></div>
+      <div style="display:flex;align-items:center;gap:2px;"><span style="color:var(--text-light);font-size:.9em;">$</span><input type="text" class="tbl-input currency-input" value="" placeholder="0.00" style="min-width:80px;" onfocus="stripFmt(this)" onblur="applyFmt(this,7,&#39;paid&#39;)" onchange="updatePayment(7,&#39;paid&#39;,parseCurrency(this.value))"></div>
+      <div><select class="tbl-select" onchange="updatePayment(7,&#39;method&#39;,this.value)">
+        <option value="">—</option>
+        <option value="Check">Check</option><option value="Credit Card">Credit Card</option><option value="Debit Card">Debit Card</option><option value="Bank Transfer">Bank Transfer</option><option value="Cash">Cash</option><option value="Zelle">Zelle</option><option value="Venmo">Venmo</option>
+      </select></div>
+      <div style="text-align:center;"><input type="checkbox" style="accent-color:var(--orange);width:17px;height:17px;" onchange="updatePayment(7,&#39;done&#39;,this.checked)" title="Mark paid"></div>
+    </div>
+    <div class="pay-grid" style="">
+      <div>
+        <input class="tbl-input" value="Hair &amp; Makeup" placeholder="Vendor..." style="font-weight:700;margin-bottom:3px;" onchange="updatePayment(8,&#39;vendor&#39;,this.value)">
+        <input class="tbl-input" value="" placeholder="Description..." style="font-size:.8em;" onchange="updatePayment(8,&#39;desc&#39;,this.value)">
+      </div>
+      <div style="display:flex;align-items:center;gap:2px;"><span style="color:var(--text-light);font-size:.9em;">$</span><input type="text" class="tbl-input currency-input" value="" placeholder="0.00" style="min-width:80px;" onfocus="stripFmt(this)" onblur="applyFmt(this,8,&#39;amount&#39;)" onchange="updatePayment(8,&#39;amount&#39;,parseCurrency(this.value))"></div>
+      <div><input type="date" class="tbl-input" value="" onchange="updatePayment(8,&#39;due&#39;,this.value)"></div>
+      <div style="display:flex;align-items:center;gap:2px;"><span style="color:var(--text-light);font-size:.9em;">$</span><input type="text" class="tbl-input currency-input" value="" placeholder="0.00" style="min-width:80px;" onfocus="stripFmt(this)" onblur="applyFmt(this,8,&#39;paid&#39;)" onchange="updatePayment(8,&#39;paid&#39;,parseCurrency(this.value))"></div>
+      <div><select class="tbl-select" onchange="updatePayment(8,&#39;method&#39;,this.value)">
+        <option value="">—</option>
+        <option value="Check">Check</option><option value="Credit Card">Credit Card</option><option value="Debit Card">Debit Card</option><option value="Bank Transfer">Bank Transfer</option><option value="Cash">Cash</option><option value="Zelle">Zelle</option><option value="Venmo">Venmo</option>
+      </select></div>
+      <div style="text-align:center;"><input type="checkbox" style="accent-color:var(--orange);width:17px;height:17px;" onchange="updatePayment(8,&#39;done&#39;,this.checked)" title="Mark paid"></div>
+    </div>
+    <div class="pay-grid" style="">
+      <div>
+        <input class="tbl-input" value="Wedding Dress" placeholder="Vendor..." style="font-weight:700;margin-bottom:3px;" onchange="updatePayment(9,&#39;vendor&#39;,this.value)">
+        <input class="tbl-input" value="" placeholder="Description..." style="font-size:.8em;" onchange="updatePayment(9,&#39;desc&#39;,this.value)">
+      </div>
+      <div style="display:flex;align-items:center;gap:2px;"><span style="color:var(--text-light);font-size:.9em;">$</span><input type="text" class="tbl-input currency-input" value="" placeholder="0.00" style="min-width:80px;" onfocus="stripFmt(this)" onblur="applyFmt(this,9,&#39;amount&#39;)" onchange="updatePayment(9,&#39;amount&#39;,parseCurrency(this.value))"></div>
+      <div><input type="date" class="tbl-input" value="" onchange="updatePayment(9,&#39;due&#39;,this.value)"></div>
+      <div style="display:flex;align-items:center;gap:2px;"><span style="color:var(--text-light);font-size:.9em;">$</span><input type="text" class="tbl-input currency-input" value="" placeholder="0.00" style="min-width:80px;" onfocus="stripFmt(this)" onblur="applyFmt(this,9,&#39;paid&#39;)" onchange="updatePayment(9,&#39;paid&#39;,parseCurrency(this.value))"></div>
+      <div><select class="tbl-select" onchange="updatePayment(9,&#39;method&#39;,this.value)">
+        <option value="">—</option>
+        <option value="Check">Check</option><option value="Credit Card">Credit Card</option><option value="Debit Card">Debit Card</option><option value="Bank Transfer">Bank Transfer</option><option value="Cash">Cash</option><option value="Zelle">Zelle</option><option value="Venmo">Venmo</option>
+      </select></div>
+      <div style="text-align:center;"><input type="checkbox" style="accent-color:var(--orange);width:17px;height:17px;" onchange="updatePayment(9,&#39;done&#39;,this.checked)" title="Mark paid"></div>
+    </div>
+    <div class="pay-grid" style="">
+      <div>
+        <input class="tbl-input" value="Wedding Rings / Bands" placeholder="Vendor..." style="font-weight:700;margin-bottom:3px;" onchange="updatePayment(10,&#39;vendor&#39;,this.value)">
+        <input class="tbl-input" value="" placeholder="Description..." style="font-size:.8em;" onchange="updatePayment(10,&#39;desc&#39;,this.value)">
+      </div>
+      <div style="display:flex;align-items:center;gap:2px;"><span style="color:var(--text-light);font-size:.9em;">$</span><input type="text" class="tbl-input currency-input" value="" placeholder="0.00" style="min-width:80px;" onfocus="stripFmt(this)" onblur="applyFmt(this,10,&#39;amount&#39;)" onchange="updatePayment(10,&#39;amount&#39;,parseCurrency(this.value))"></div>
+      <div><input type="date" class="tbl-input" value="" onchange="updatePayment(10,&#39;due&#39;,this.value)"></div>
+      <div style="display:flex;align-items:center;gap:2px;"><span style="color:var(--text-light);font-size:.9em;">$</span><input type="text" class="tbl-input currency-input" value="" placeholder="0.00" style="min-width:80px;" onfocus="stripFmt(this)" onblur="applyFmt(this,10,&#39;paid&#39;)" onchange="updatePayment(10,&#39;paid&#39;,parseCurrency(this.value))"></div>
+      <div><select class="tbl-select" onchange="updatePayment(10,&#39;method&#39;,this.value)">
+        <option value="">—</option>
+        <option value="Check">Check</option><option value="Credit Card">Credit Card</option><option value="Debit Card">Debit Card</option><option value="Bank Transfer">Bank Transfer</option><option value="Cash">Cash</option><option value="Zelle">Zelle</option><option value="Venmo">Venmo</option>
+      </select></div>
+      <div style="text-align:center;"><input type="checkbox" style="accent-color:var(--orange);width:17px;height:17px;" onchange="updatePayment(10,&#39;done&#39;,this.checked)" title="Mark paid"></div>
+    </div>
+    <div class="pay-grid" style="">
+      <div>
+        <input class="tbl-input" value="Florals" placeholder="Vendor..." style="font-weight:700;margin-bottom:3px;" onchange="updatePayment(11,&#39;vendor&#39;,this.value)">
+        <input class="tbl-input" value="" placeholder="Description..." style="font-size:.8em;" onchange="updatePayment(11,&#39;desc&#39;,this.value)">
+      </div>
+      <div style="display:flex;align-items:center;gap:2px;"><span style="color:var(--text-light);font-size:.9em;">$</span><input type="text" class="tbl-input currency-input" value="" placeholder="0.00" style="min-width:80px;" onfocus="stripFmt(this)" onblur="applyFmt(this,11,&#39;amount&#39;)" onchange="updatePayment(11,&#39;amount&#39;,parseCurrency(this.value))"></div>
+      <div><input type="date" class="tbl-input" value="" onchange="updatePayment(11,&#39;due&#39;,this.value)"></div>
+      <div style="display:flex;align-items:center;gap:2px;"><span style="color:var(--text-light);font-size:.9em;">$</span><input type="text" class="tbl-input currency-input" value="" placeholder="0.00" style="min-width:80px;" onfocus="stripFmt(this)" onblur="applyFmt(this,11,&#39;paid&#39;)" onchange="updatePayment(11,&#39;paid&#39;,parseCurrency(this.value))"></div>
+      <div><select class="tbl-select" onchange="updatePayment(11,&#39;method&#39;,this.value)">
+        <option value="">—</option>
+        <option value="Check">Check</option><option value="Credit Card">Credit Card</option><option value="Debit Card">Debit Card</option><option value="Bank Transfer">Bank Transfer</option><option value="Cash">Cash</option><option value="Zelle">Zelle</option><option value="Venmo">Venmo</option>
+      </select></div>
+      <div style="text-align:center;"><input type="checkbox" style="accent-color:var(--orange);width:17px;height:17px;" onchange="updatePayment(11,&#39;done&#39;,this.checked)" title="Mark paid"></div>
+    </div>
+    <div class="pay-grid" style="">
+      <div>
+        <input class="tbl-input" value="Rehearsal Dinner" placeholder="Vendor..." style="font-weight:700;margin-bottom:3px;" onchange="updatePayment(12,&#39;vendor&#39;,this.value)">
+        <input class="tbl-input" value="" placeholder="Description..." style="font-size:.8em;" onchange="updatePayment(12,&#39;desc&#39;,this.value)">
+      </div>
+      <div style="display:flex;align-items:center;gap:2px;"><span style="color:var(--text-light);font-size:.9em;">$</span><input type="text" class="tbl-input currency-input" value="" placeholder="0.00" style="min-width:80px;" onfocus="stripFmt(this)" onblur="applyFmt(this,12,&#39;amount&#39;)" onchange="updatePayment(12,&#39;amount&#39;,parseCurrency(this.value))"></div>
+      <div><input type="date" class="tbl-input" value="" onchange="updatePayment(12,&#39;due&#39;,this.value)"></div>
+      <div style="display:flex;align-items:center;gap:2px;"><span style="color:var(--text-light);font-size:.9em;">$</span><input type="text" class="tbl-input currency-input" value="" placeholder="0.00" style="min-width:80px;" onfocus="stripFmt(this)" onblur="applyFmt(this,12,&#39;paid&#39;)" onchange="updatePayment(12,&#39;paid&#39;,parseCurrency(this.value))"></div>
+      <div><select class="tbl-select" onchange="updatePayment(12,&#39;method&#39;,this.value)">
+        <option value="">—</option>
+        <option value="Check">Check</option><option value="Credit Card">Credit Card</option><option value="Debit Card">Debit Card</option><option value="Bank Transfer">Bank Transfer</option><option value="Cash">Cash</option><option value="Zelle">Zelle</option><option value="Venmo">Venmo</option>
+      </select></div>
+      <div style="text-align:center;"><input type="checkbox" style="accent-color:var(--orange);width:17px;height:17px;" onchange="updatePayment(12,&#39;done&#39;,this.checked)" title="Mark paid"></div>
+    </div>
+    <div class="pay-grid" style="">
+      <div>
+        <input class="tbl-input" value="Hotel Room Block" placeholder="Vendor..." style="font-weight:700;margin-bottom:3px;" onchange="updatePayment(13,&#39;vendor&#39;,this.value)">
+        <input class="tbl-input" value="" placeholder="Description..." style="font-size:.8em;" onchange="updatePayment(13,&#39;desc&#39;,this.value)">
+      </div>
+      <div style="display:flex;align-items:center;gap:2px;"><span style="color:var(--text-light);font-size:.9em;">$</span><input type="text" class="tbl-input currency-input" value="" placeholder="0.00" style="min-width:80px;" onfocus="stripFmt(this)" onblur="applyFmt(this,13,&#39;amount&#39;)" onchange="updatePayment(13,&#39;amount&#39;,parseCurrency(this.value))"></div>
+      <div><input type="date" class="tbl-input" value="" onchange="updatePayment(13,&#39;due&#39;,this.value)"></div>
+      <div style="display:flex;align-items:center;gap:2px;"><span style="color:var(--text-light);font-size:.9em;">$</span><input type="text" class="tbl-input currency-input" value="" placeholder="0.00" style="min-width:80px;" onfocus="stripFmt(this)" onblur="applyFmt(this,13,&#39;paid&#39;)" onchange="updatePayment(13,&#39;paid&#39;,parseCurrency(this.value))"></div>
+      <div><select class="tbl-select" onchange="updatePayment(13,&#39;method&#39;,this.value)">
+        <option value="">—</option>
+        <option value="Check">Check</option><option value="Credit Card">Credit Card</option><option value="Debit Card">Debit Card</option><option value="Bank Transfer">Bank Transfer</option><option value="Cash">Cash</option><option value="Zelle">Zelle</option><option value="Venmo">Venmo</option>
+      </select></div>
+      <div style="text-align:center;"><input type="checkbox" style="accent-color:var(--orange);width:17px;height:17px;" onchange="updatePayment(13,&#39;done&#39;,this.checked)" title="Mark paid"></div>
+    </div>
+    <div class="pay-grid" style="">
+      <div>
+        <input class="tbl-input" value="Honeymoon" placeholder="Vendor..." style="font-weight:700;margin-bottom:3px;" onchange="updatePayment(14,&#39;vendor&#39;,this.value)">
+        <input class="tbl-input" value="" placeholder="Description..." style="font-size:.8em;" onchange="updatePayment(14,&#39;desc&#39;,this.value)">
+      </div>
+      <div style="display:flex;align-items:center;gap:2px;"><span style="color:var(--text-light);font-size:.9em;">$</span><input type="text" class="tbl-input currency-input" value="" placeholder="0.00" style="min-width:80px;" onfocus="stripFmt(this)" onblur="applyFmt(this,14,&#39;amount&#39;)" onchange="updatePayment(14,&#39;amount&#39;,parseCurrency(this.value))"></div>
+      <div><input type="date" class="tbl-input" value="" onchange="updatePayment(14,&#39;due&#39;,this.value)"></div>
+      <div style="display:flex;align-items:center;gap:2px;"><span style="color:var(--text-light);font-size:.9em;">$</span><input type="text" class="tbl-input currency-input" value="" placeholder="0.00" style="min-width:80px;" onfocus="stripFmt(this)" onblur="applyFmt(this,14,&#39;paid&#39;)" onchange="updatePayment(14,&#39;paid&#39;,parseCurrency(this.value))"></div>
+      <div><select class="tbl-select" onchange="updatePayment(14,&#39;method&#39;,this.value)">
+        <option value="">—</option>
+        <option value="Check">Check</option><option value="Credit Card">Credit Card</option><option value="Debit Card">Debit Card</option><option value="Bank Transfer">Bank Transfer</option><option value="Cash">Cash</option><option value="Zelle">Zelle</option><option value="Venmo">Venmo</option>
+      </select></div>
+      <div style="text-align:center;"><input type="checkbox" style="accent-color:var(--orange);width:17px;height:17px;" onchange="updatePayment(14,&#39;done&#39;,this.checked)" title="Mark paid"></div>
+    </div>
+    <div class="pay-grid" style="">
+      <div>
+        <input class="tbl-input" value="Wedding Invitations" placeholder="Vendor..." style="font-weight:700;margin-bottom:3px;" onchange="updatePayment(15,&#39;vendor&#39;,this.value)">
+        <input class="tbl-input" value="" placeholder="Description..." style="font-size:.8em;" onchange="updatePayment(15,&#39;desc&#39;,this.value)">
+      </div>
+      <div style="display:flex;align-items:center;gap:2px;"><span style="color:var(--text-light);font-size:.9em;">$</span><input type="text" class="tbl-input currency-input" value="" placeholder="0.00" style="min-width:80px;" onfocus="stripFmt(this)" onblur="applyFmt(this,15,&#39;amount&#39;)" onchange="updatePayment(15,&#39;amount&#39;,parseCurrency(this.value))"></div>
+      <div><input type="date" class="tbl-input" value="" onchange="updatePayment(15,&#39;due&#39;,this.value)"></div>
+      <div style="display:flex;align-items:center;gap:2px;"><span style="color:var(--text-light);font-size:.9em;">$</span><input type="text" class="tbl-input currency-input" value="" placeholder="0.00" style="min-width:80px;" onfocus="stripFmt(this)" onblur="applyFmt(this,15,&#39;paid&#39;)" onchange="updatePayment(15,&#39;paid&#39;,parseCurrency(this.value))"></div>
+      <div><select class="tbl-select" onchange="updatePayment(15,&#39;method&#39;,this.value)">
+        <option value="">—</option>
+        <option value="Check">Check</option><option value="Credit Card">Credit Card</option><option value="Debit Card">Debit Card</option><option value="Bank Transfer">Bank Transfer</option><option value="Cash">Cash</option><option value="Zelle">Zelle</option><option value="Venmo">Venmo</option>
+      </select></div>
+      <div style="text-align:center;"><input type="checkbox" style="accent-color:var(--orange);width:17px;height:17px;" onchange="updatePayment(15,&#39;done&#39;,this.checked)" title="Mark paid"></div>
+    </div>
+    <div class="pay-grid" style="">
+      <div>
+        <input class="tbl-input" value="Wedding Favors" placeholder="Vendor..." style="font-weight:700;margin-bottom:3px;" onchange="updatePayment(16,&#39;vendor&#39;,this.value)">
+        <input class="tbl-input" value="" placeholder="Description..." style="font-size:.8em;" onchange="updatePayment(16,&#39;desc&#39;,this.value)">
+      </div>
+      <div style="display:flex;align-items:center;gap:2px;"><span style="color:var(--text-light);font-size:.9em;">$</span><input type="text" class="tbl-input currency-input" value="" placeholder="0.00" style="min-width:80px;" onfocus="stripFmt(this)" onblur="applyFmt(this,16,&#39;amount&#39;)" onchange="updatePayment(16,&#39;amount&#39;,parseCurrency(this.value))"></div>
+      <div><input type="date" class="tbl-input" value="" onchange="updatePayment(16,&#39;due&#39;,this.value)"></div>
+      <div style="display:flex;align-items:center;gap:2px;"><span style="color:var(--text-light);font-size:.9em;">$</span><input type="text" class="tbl-input currency-input" value="" placeholder="0.00" style="min-width:80px;" onfocus="stripFmt(this)" onblur="applyFmt(this,16,&#39;paid&#39;)" onchange="updatePayment(16,&#39;paid&#39;,parseCurrency(this.value))"></div>
+      <div><select class="tbl-select" onchange="updatePayment(16,&#39;method&#39;,this.value)">
+        <option value="">—</option>
+        <option value="Check">Check</option><option value="Credit Card">Credit Card</option><option value="Debit Card">Debit Card</option><option value="Bank Transfer">Bank Transfer</option><option value="Cash">Cash</option><option value="Zelle">Zelle</option><option value="Venmo">Venmo</option>
+      </select></div>
+      <div style="text-align:center;"><input type="checkbox" style="accent-color:var(--orange);width:17px;height:17px;" onchange="updatePayment(16,&#39;done&#39;,this.checked)" title="Mark paid"></div>
+    </div>
+    <div class="pay-grid" style="">
+      <div>
+        <input class="tbl-input" value="Other" placeholder="Vendor..." style="font-weight:700;margin-bottom:3px;" onchange="updatePayment(17,&#39;vendor&#39;,this.value)">
+        <input class="tbl-input" value="" placeholder="Description..." style="font-size:.8em;" onchange="updatePayment(17,&#39;desc&#39;,this.value)">
+      </div>
+      <div style="display:flex;align-items:center;gap:2px;"><span style="color:var(--text-light);font-size:.9em;">$</span><input type="text" class="tbl-input currency-input" value="" placeholder="0.00" style="min-width:80px;" onfocus="stripFmt(this)" onblur="applyFmt(this,17,&#39;amount&#39;)" onchange="updatePayment(17,&#39;amount&#39;,parseCurrency(this.value))"></div>
+      <div><input type="date" class="tbl-input" value="" onchange="updatePayment(17,&#39;due&#39;,this.value)"></div>
+      <div style="display:flex;align-items:center;gap:2px;"><span style="color:var(--text-light);font-size:.9em;">$</span><input type="text" class="tbl-input currency-input" value="" placeholder="0.00" style="min-width:80px;" onfocus="stripFmt(this)" onblur="applyFmt(this,17,&#39;paid&#39;)" onchange="updatePayment(17,&#39;paid&#39;,parseCurrency(this.value))"></div>
+      <div><select class="tbl-select" onchange="updatePayment(17,&#39;method&#39;,this.value)">
+        <option value="">—</option>
+        <option value="Check">Check</option><option value="Credit Card">Credit Card</option><option value="Debit Card">Debit Card</option><option value="Bank Transfer">Bank Transfer</option><option value="Cash">Cash</option><option value="Zelle">Zelle</option><option value="Venmo">Venmo</option>
+      </select></div>
+      <div style="text-align:center;"><input type="checkbox" style="accent-color:var(--orange);width:17px;height:17px;" onchange="updatePayment(17,&#39;done&#39;,this.checked)" title="Mark paid"></div>
+    </div></div>
       <div style="padding:12px 16px;">
         <button class="btn btn-sm btn-outline" onclick="addPaymentRow()">➕ Add Payment</button>
       </div>
@@ -1087,7 +1743,7 @@ body{font-family:'Lato',sans-serif;background:var(--cream);color:var(--text);min
     <div class="form-group"><label>Count</label><input type="number" id="ag-count" value="1" min="0" max="10"></div>
     <div class="form-group"><label>Notes</label><input type="text" id="ag-notes" placeholder="Optional notes..."></div>
     <div class="modal-actions">
-      <button class="btn btn-ghost btn-sm" onclick="closeModal('add-guest-modal')">Cancel</button>
+      <button class="btn btn-ghost btn-sm" onclick="closeModal(&#39;add-guest-modal&#39;)">Cancel</button>
       <button class="btn btn-sm" onclick="saveNewGuest()">Save Guest</button>
     </div>
   </div>
@@ -1206,7 +1862,7 @@ function showTab(name) {
 
 // ── COUNTDOWN TIMER ───────────────────────────────────────
 function updateCountdown() {
-  const wedding = new Date('2027-05-01T17:00:00');
+  const wedding = new Date('2027-05-22T12:00:00');
   const now = new Date();
   const diff = wedding - now;
   if (diff <= 0) {
@@ -1789,7 +2445,7 @@ function addPaymentRow() {
 // ═══════════════════════════════════════════════════════════
 function updateDashboard() {
   // Days
-  const diff = new Date('2027-05-22') - new Date();
+  const diff = new Date('2027-05-22T12:00:00') - new Date();
   const days = Math.max(0, Math.floor(diff/86400000));
   setText('ds-days', days);
 
@@ -2195,5 +2851,6 @@ async function init() {
 }
 init();
 </script>
-</body>
-</html>
+
+
+</body></html>
