@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0048)file:///Users/andrewoxley/Downloads/index_3.html -->
+<!-- saved from url=(0048)file:///Users/andrewoxley/Downloads/index_4.html -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -320,14 +320,14 @@ body{font-family:'Lato',sans-serif;background:var(--cream);color:var(--text);min
   <div class="header-sub">Saturday · May 22, 2027</div>
   <div class="header-venue">⛳ The Georgia Club · Statham, GA</div>
   <div style="display:flex;align-items:center;justify-content:center;gap:10px;margin-top:5px;">
-    <div id="sync-status" style="font-size:.62em;color:rgba(255,255,255,.45);letter-spacing:1px;">☁️ Synced · 02:40 PM</div>
+    <div id="sync-status" style="font-size:.62em;color:rgba(255,255,255,.45);letter-spacing:1px;">☁️ Synced · 02:46 PM</div>
     <button onclick="pushShared();pushFinance();setSyncStatus(&#39;☁️ Pushed!&#39;)" title="Force sync to cloud" style="background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:rgba(255,255,255,.6);border-radius:6px;padding:2px 8px;font-size:.6em;cursor:pointer;letter-spacing:.5px;">↑ Sync</button>
   </div>
   <div class="countdown" id="countdown">
     <div class="cd-unit"><span class="cd-num" id="cd-days">386</span><span class="cd-lbl">Days</span></div>
     <div class="cd-unit"><span class="cd-num" id="cd-hours">21</span><span class="cd-lbl">Hours</span></div>
-    <div class="cd-unit"><span class="cd-num" id="cd-mins">19</span><span class="cd-lbl">Minutes</span></div>
-    <div class="cd-unit"><span class="cd-num" id="cd-secs">21</span><span class="cd-lbl">Seconds</span></div>
+    <div class="cd-unit"><span class="cd-num" id="cd-mins">12</span><span class="cd-lbl">Minutes</span></div>
+    <div class="cd-unit"><span class="cd-num" id="cd-secs">20</span><span class="cd-lbl">Seconds</span></div>
   </div>
 </header>
 
@@ -1380,7 +1380,7 @@ body{font-family:'Lato',sans-serif;background:var(--cream);color:var(--text);min
       <div class="card-title">💰 Total Budget</div>
       <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
         <label style="font-weight:700;color:var(--purple);">Overall Budget: $</label>
-        <input type="number" class="tbl-input" style="max-width:180px;" id="fin-budget-input" placeholder="Enter total budget..." onchange="saveFinance()">
+        <input type="number" class="tbl-input" style="max-width:180px;" id="fin-budget-input" placeholder="Enter total budget..." oninput="saveFinance()" onchange="saveFinance()">
         <span style="font-size:.85em;color:var(--text-light);">Venue total</span>
       </div>
     </div>
@@ -1890,6 +1890,8 @@ function checkPw() {
     document.getElementById('finance-content').classList.add('unlocked');
     sessionStorage.setItem('we_fin_unlocked', '1');
     err.style.display = 'none';
+    renderFinanceSummary();
+    renderPayments();
   } else {
     err.style.display = 'block';
     document.getElementById('pw-input').value = '';
@@ -1901,6 +1903,8 @@ function checkPw() {
 if (sessionStorage.getItem('we_fin_unlocked') === '1') {
   document.getElementById('lock-screen').style.display = 'none';
   document.getElementById('finance-content').classList.add('unlocked');
+  renderFinanceSummary();
+  renderPayments();
 }
 
 // ── MODAL HELPERS ─────────────────────────────────────────
