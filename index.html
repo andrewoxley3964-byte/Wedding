@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0048)file:///Users/andrewoxley/Downloads/index_6.html -->
+<!-- saved from url=(0048)file:///Users/andrewoxley/Downloads/index_7.html -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -320,14 +320,14 @@ body{font-family:'Lato',sans-serif;background:var(--cream);color:var(--text);min
   <div class="header-sub">Saturday · May 22, 2027</div>
   <div class="header-venue">⛳ The Georgia Club · Statham, GA</div>
   <div style="display:flex;align-items:center;justify-content:center;gap:10px;margin-top:5px;">
-    <div id="sync-status" style="font-size:.62em;color:rgba(255,255,255,.45);letter-spacing:1px;">☁️ Synced · 02:52 PM</div>
+    <div id="sync-status" style="font-size:.62em;color:rgba(255,255,255,.45);letter-spacing:1px;">☁️ Synced · 02:57 PM</div>
     <button onclick="pushShared();pushFinance();setSyncStatus(&#39;☁️ Pushed!&#39;)" title="Force sync to cloud" style="background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:rgba(255,255,255,.6);border-radius:6px;padding:2px 8px;font-size:.6em;cursor:pointer;letter-spacing:.5px;">↑ Sync</button>
   </div>
   <div class="countdown" id="countdown">
     <div class="cd-unit"><span class="cd-num" id="cd-days">386</span><span class="cd-lbl">Days</span></div>
     <div class="cd-unit"><span class="cd-num" id="cd-hours">21</span><span class="cd-lbl">Hours</span></div>
-    <div class="cd-unit"><span class="cd-num" id="cd-mins">07</span><span class="cd-lbl">Minutes</span></div>
-    <div class="cd-unit"><span class="cd-num" id="cd-secs">06</span><span class="cd-lbl">Seconds</span></div>
+    <div class="cd-unit"><span class="cd-num" id="cd-mins">02</span><span class="cd-lbl">Minutes</span></div>
+    <div class="cd-unit"><span class="cd-num" id="cd-secs">31</span><span class="cd-lbl">Seconds</span></div>
   </div>
 </header>
 
@@ -1367,22 +1367,22 @@ body{font-family:'Lato',sans-serif;background:var(--cream);color:var(--text);min
   </table></div>
     </div>
 
-    <!-- Budget Summary -->
-    <div class="stats-grid">
-      <div class="stat o"><span class="stat-n" id="fin-total-budget">—</span><span class="stat-l">Total Budget</span></div>
-      <div class="stat p"><span class="stat-n" id="fin-committed">$0.00</span><span class="stat-l">Committed</span></div>
-      <div class="stat g"><span class="stat-n" id="fin-paid">$0.00</span><span class="stat-l">Total Paid</span></div>
-      <div class="stat"><span class="stat-n" id="fin-remaining">$0.00</span><span class="stat-l">Still Due</span></div>
-    </div>
-
     <!-- Budget Input -->
     <div class="card">
       <div class="card-title">💰 Total Budget</div>
       <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
         <label style="font-weight:700;color:var(--purple);">Overall Budget: $</label>
         <input type="number" class="tbl-input" style="max-width:180px;" id="fin-budget-input" placeholder="Enter total budget..." oninput="saveFinance()" onchange="saveFinance()">
-        <span style="font-size:.85em;color:var(--text-light);">Venue total</span>
+        <button class="btn btn-sm" onclick="saveFinance()">💾 Save</button>
       </div>
+    </div>
+
+    <!-- Budget Summary -->
+    <div class="stats-grid">
+      <div class="stat o"><span class="stat-n" id="fin-total-budget">—</span><span class="stat-l">Total Budget</span></div>
+      <div class="stat p"><span class="stat-n" id="fin-committed">$0.00</span><span class="stat-l">Committed</span></div>
+      <div class="stat g"><span class="stat-n" id="fin-paid">$0.00</span><span class="stat-l">Total Paid</span></div>
+      <div class="stat"><span class="stat-n" id="fin-remaining">$0.00</span><span class="stat-l">Still Due</span></div>
     </div>
 
     <!-- Payment Schedule -->
@@ -2318,6 +2318,11 @@ function saveFinance() {
 
 function renderFinanceSummary() {
   const fmt = n => '$' + Math.abs(+n||0).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});
+
+  // Always read current budget from input if available, so stats stay in sync
+  const bEl = document.getElementById('fin-budget-input');
+  if (bEl && bEl.value) finBudget = +bEl.value || finBudget;
+
   const committed = payments.reduce((s,p)=>s+(+p.amount||0),0);
   const paid      = payments.reduce((s,p)=>s+(+p.paid||0),0);
   const remaining = committed - paid;
@@ -2334,7 +2339,6 @@ function renderFinanceSummary() {
   setText('fin-committed', fmt(committed));
   setText('fin-paid', fmt(paid));
   setText('fin-remaining', fmt(remaining));
-  const bEl = document.getElementById('fin-budget-input');
   if (bEl && finBudget) bEl.value = finBudget;
   const nEl = document.getElementById('fin-notes');
   if (nEl && finNotes) nEl.value = finNotes;
