@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0048)file:///Users/andrewoxley/Downloads/index_8.html -->
+<!-- saved from url=(0048)file:///Users/andrewoxley/Downloads/index_9.html -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -320,14 +320,14 @@ body{font-family:'Lato',sans-serif;background:var(--cream);color:var(--text);min
   <div class="header-sub">Saturday · May 22, 2027</div>
   <div class="header-venue">⛳ The Georgia Club · Statham, GA</div>
   <div style="display:flex;align-items:center;justify-content:center;gap:10px;margin-top:5px;">
-    <div id="sync-status" style="font-size:.62em;color:rgba(255,255,255,.45);letter-spacing:1px;">☁️ Synced · 03:02 PM</div>
+    <div id="sync-status" style="font-size:.62em;color:rgba(255,255,255,.45);letter-spacing:1px;">☁️ Synced · 03:06 PM</div>
     <button onclick="pushShared();pushFinance();setSyncStatus(&#39;☁️ Pushed!&#39;)" title="Force sync to cloud" style="background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:rgba(255,255,255,.6);border-radius:6px;padding:2px 8px;font-size:.6em;cursor:pointer;letter-spacing:.5px;">↑ Sync</button>
   </div>
   <div class="countdown" id="countdown">
     <div class="cd-unit"><span class="cd-num" id="cd-days">386</span><span class="cd-lbl">Days</span></div>
     <div class="cd-unit"><span class="cd-num" id="cd-hours">20</span><span class="cd-lbl">Hours</span></div>
-    <div class="cd-unit"><span class="cd-num" id="cd-mins">57</span><span class="cd-lbl">Minutes</span></div>
-    <div class="cd-unit"><span class="cd-num" id="cd-secs">34</span><span class="cd-lbl">Seconds</span></div>
+    <div class="cd-unit"><span class="cd-num" id="cd-mins">53</span><span class="cd-lbl">Minutes</span></div>
+    <div class="cd-unit"><span class="cd-num" id="cd-secs">18</span><span class="cd-lbl">Seconds</span></div>
   </div>
 </header>
 
@@ -2296,14 +2296,16 @@ const FIN_VER = 2; // bump to reset finance defaults
 
 function loadFinance() {
   const savedFinVer = localStorage.getItem('we_fv');
-  const s = savedFinVer == FIN_VER ? localStorage.getItem('we_finance') : null;
-  if (savedFinVer != FIN_VER) {
-    localStorage.setItem('we_fv', FIN_VER);
-    localStorage.removeItem('we_finance');
-  }
+  const s = localStorage.getItem('we_finance');
+  // Always update version key without wiping data
+  localStorage.setItem('we_fv', String(FIN_VER));
   if (s) {
-    try { const d = JSON.parse(s); payments = d.payments || DEFAULT_PAYMENTS.map(p=>({...p})); finBudget = d.budget||0; finNotes = d.notes||''; }
-    catch(e) { payments = DEFAULT_PAYMENTS.map(p=>({...p})); }
+    try {
+      const d = JSON.parse(s);
+      payments = d.payments || DEFAULT_PAYMENTS.map(p=>({...p}));
+      finBudget = d.budget || 0;
+      finNotes = d.notes || '';
+    } catch(e) { payments = DEFAULT_PAYMENTS.map(p=>({...p})); }
   } else { payments = DEFAULT_PAYMENTS.map(p=>({...p})); }
 }
 
@@ -2844,6 +2846,7 @@ async function init() {
   renderGuests();
   renderChecklist();
   renderPayments();
+  renderFinanceSummary();
   renderHotelTasks();
   loadVenueDecisions();
   loadPkgToggles();
