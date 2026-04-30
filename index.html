@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0048)file:///Users/andrewoxley/Downloads/index_7.html -->
+<!-- saved from url=(0048)file:///Users/andrewoxley/Downloads/index_8.html -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -320,14 +320,14 @@ body{font-family:'Lato',sans-serif;background:var(--cream);color:var(--text);min
   <div class="header-sub">Saturday · May 22, 2027</div>
   <div class="header-venue">⛳ The Georgia Club · Statham, GA</div>
   <div style="display:flex;align-items:center;justify-content:center;gap:10px;margin-top:5px;">
-    <div id="sync-status" style="font-size:.62em;color:rgba(255,255,255,.45);letter-spacing:1px;">☁️ Synced · 02:57 PM</div>
+    <div id="sync-status" style="font-size:.62em;color:rgba(255,255,255,.45);letter-spacing:1px;">☁️ Synced · 03:02 PM</div>
     <button onclick="pushShared();pushFinance();setSyncStatus(&#39;☁️ Pushed!&#39;)" title="Force sync to cloud" style="background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:rgba(255,255,255,.6);border-radius:6px;padding:2px 8px;font-size:.6em;cursor:pointer;letter-spacing:.5px;">↑ Sync</button>
   </div>
   <div class="countdown" id="countdown">
     <div class="cd-unit"><span class="cd-num" id="cd-days">386</span><span class="cd-lbl">Days</span></div>
-    <div class="cd-unit"><span class="cd-num" id="cd-hours">21</span><span class="cd-lbl">Hours</span></div>
-    <div class="cd-unit"><span class="cd-num" id="cd-mins">02</span><span class="cd-lbl">Minutes</span></div>
-    <div class="cd-unit"><span class="cd-num" id="cd-secs">31</span><span class="cd-lbl">Seconds</span></div>
+    <div class="cd-unit"><span class="cd-num" id="cd-hours">20</span><span class="cd-lbl">Hours</span></div>
+    <div class="cd-unit"><span class="cd-num" id="cd-mins">57</span><span class="cd-lbl">Minutes</span></div>
+    <div class="cd-unit"><span class="cd-num" id="cd-secs">34</span><span class="cd-lbl">Seconds</span></div>
   </div>
 </header>
 
@@ -2319,29 +2319,37 @@ function saveFinance() {
 function renderFinanceSummary() {
   const fmt = n => '$' + Math.abs(+n||0).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});
 
-  // Always read current budget from input if available, so stats stay in sync
+  // Read budget directly from input field if it has a value, otherwise use finBudget variable
   const bEl = document.getElementById('fin-budget-input');
-  if (bEl && bEl.value) finBudget = +bEl.value || finBudget;
+  const budgetVal = bEl ? (+bEl.value || finBudget) : finBudget;
+  if (budgetVal) finBudget = budgetVal;
 
-  const committed = payments.reduce((s,p)=>s+(+p.amount||0),0);
-  const paid      = payments.reduce((s,p)=>s+(+p.paid||0),0);
+  // Compute totals from payments array
+  let committed = 0, paid = 0;
+  for (const p of payments) {
+    committed += parseFloat(p.amount) || 0;
+    paid      += parseFloat(p.paid)   || 0;
+  }
   const remaining = committed - paid;
 
-  // Extra guests cost (from extras calculator or live guest count)
+  // Update the 4 stat boxes
+  document.getElementById('fin-total-budget') && (document.getElementById('fin-total-budget').textContent = finBudget ? fmt(finBudget) : '—');
+  document.getElementById('fin-committed')    && (document.getElementById('fin-committed').textContent    = fmt(committed));
+  document.getElementById('fin-paid')         && (document.getElementById('fin-paid').textContent         = fmt(paid));
+  document.getElementById('fin-remaining')    && (document.getElementById('fin-remaining').textContent    = fmt(remaining));
+
+  // Restore input values
+  if (bEl && finBudget) bEl.value = finBudget;
+  const nEl = document.getElementById('fin-notes');
+  if (nEl && finNotes) nEl.value = finNotes;
+
+  // Extra guests cost
   const confirmedGuests = typeof guests !== 'undefined' ? guests.filter(g=>g[G.RSVP]==='Yes').length : 0;
   const activeGuests    = typeof guests !== 'undefined' ? guests.filter(g=>(g[G.INV]||'Yes')==='Yes').length : 0;
   const effectiveGuests = confirmedGuests > 0 ? confirmedGuests : activeGuests;
   const extraGuests     = Math.max(0, effectiveGuests - 150);
   const extraGuestCost  = extraGuests * 85;
   const grandTotal      = committed + extraGuestCost;
-
-  setText('fin-total-budget', finBudget ? fmt(finBudget) : '—');
-  setText('fin-committed', fmt(committed));
-  setText('fin-paid', fmt(paid));
-  setText('fin-remaining', fmt(remaining));
-  if (bEl && finBudget) bEl.value = finBudget;
-  const nEl = document.getElementById('fin-notes');
-  if (nEl && finNotes) nEl.value = finNotes;
 
   // Build cost breakdown table
   const tbl = document.getElementById('fin-breakdown-table');
@@ -2437,9 +2445,9 @@ function renderPayments() {
 
 function updatePayment(i, field, val) {
   if (field === 'done') payments[i].done = val;
-  else if (field === 'amount' || field === 'paid') payments[i][field] = +val || 0;
+  else if (field === 'amount' || field === 'paid') payments[i][field] = parseFloat(String(val).replace(/[$,]/g,'')) || 0;
   else payments[i][field] = val;
-  saveFinance(); renderFinanceSummary();
+  saveFinance();
   toast('Saved ✓');
 }
 
