@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<!-- saved from url=(0121)file:///Users/andrewoxley/Library/Containers/com.microsoft.Outlook/Data/tmp/Outlook%20Temp/will-ella-wedding%5B90%5D.html -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>💍 Will &amp; Ella — May 22, 2027</title>
-<link href="./index_files/css2" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 <style>
 :root {
   --orange: #D63384;
@@ -306,8 +305,8 @@ body{font-family:'Lato',sans-serif;background:var(--cream);color:var(--text);min
 .calc-result{font-weight:700;color:var(--orange);font-size:1em;min-width:80px;}
 </style>
   <!-- Firebase SDK (compat) -->
-  <script src="./index_files/firebase-app-compat.js"></script>
-  <script src="./index_files/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
 </head>
 <body>
 
@@ -320,14 +319,14 @@ body{font-family:'Lato',sans-serif;background:var(--cream);color:var(--text);min
   <div class="header-sub">Saturday · May 22, 2027</div>
   <div class="header-venue">⛳ The Georgia Club · Statham, GA</div>
   <div style="display:flex;align-items:center;justify-content:center;gap:10px;margin-top:5px;">
-    <div id="sync-status" style="font-size:.62em;color:rgba(255,255,255,.45);letter-spacing:1px;">☁️ Synced · 09:43 AM</div>
+    <div id="sync-status" style="font-size:.62em;color:rgba(255,255,255,.45);letter-spacing:1px;">☁️ Synced · 11:57 AM</div>
     <button onclick="pushShared();pushFinance();setSyncStatus(&#39;☁️ Pushed!&#39;)" title="Force sync to cloud" style="background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:rgba(255,255,255,.6);border-radius:6px;padding:2px 8px;font-size:.6em;cursor:pointer;letter-spacing:.5px;">↑ Sync</button>
   </div>
   <div class="countdown" id="countdown">
-    <div class="cd-unit"><span class="cd-num" id="cd-days">365</span><span class="cd-lbl">Days</span></div>
-    <div class="cd-unit"><span class="cd-num" id="cd-hours">07</span><span class="cd-lbl">Hours</span></div>
-    <div class="cd-unit"><span class="cd-num" id="cd-mins">16</span><span class="cd-lbl">Minutes</span></div>
-    <div class="cd-unit"><span class="cd-num" id="cd-secs">30</span><span class="cd-lbl">Seconds</span></div>
+    <div class="cd-unit"><span class="cd-num" id="cd-days">386</span><span class="cd-lbl">Days</span></div>
+    <div class="cd-unit"><span class="cd-num" id="cd-hours">03</span><span class="cd-lbl">Hours</span></div>
+    <div class="cd-unit"><span class="cd-num" id="cd-mins">57</span><span class="cd-lbl">Minutes</span></div>
+    <div class="cd-unit"><span class="cd-num" id="cd-secs">09</span><span class="cd-lbl">Seconds</span></div>
   </div>
 </header>
 
@@ -352,7 +351,7 @@ body{font-family:'Lato',sans-serif;background:var(--cream);color:var(--text);min
 
   <!-- Key Stats -->
   <div class="stats-grid" id="dash-stats">
-    <div class="stat o"><span class="stat-n" id="ds-days">385</span><span class="stat-l">Days to Go</span></div>
+    <div class="stat o"><span class="stat-n" id="ds-days">386</span><span class="stat-l">Days to Go</span></div>
     <div class="stat p"><span class="stat-n" id="ds-confirmed">0</span><span class="stat-l">Confirmed Guests</span></div>
     <div class="stat g"><span class="stat-n" id="ds-invited">4</span><span class="stat-l">Total Invited</span></div>
     <div class="stat p"><span class="stat-n" id="ds-tasks">2/88</span><span class="stat-l">Tasks Done</span></div>
@@ -396,7 +395,7 @@ body{font-family:'Lato',sans-serif;background:var(--cream);color:var(--text);min
       </div>
       <div class="pay-alert-amt" style="color:var(--warning);">Get Started →</div>
     </div>
-    <div id="dash-pay-progress" style="margin:10px 0 6px;"><div style="font-size:.82em;color:var(--text-light);margin-bottom:5px;">Vendors with amounts set: <strong>0/18</strong> · Payments marked paid: <strong>0</strong></div></div>
+    <div id="dash-pay-progress" style="margin:10px 0 6px;"><div style="font-size:.82em;color:var(--text-light);margin-bottom:5px;">Vendors with amounts set: <strong>2/18</strong> · Payments marked paid: <strong>0</strong></div></div>
   </div>
 
   <!-- Quick Checklist Preview -->
@@ -1335,15 +1334,15 @@ body{font-family:'Lato',sans-serif;background:var(--cream);color:var(--text);min
 <!--  TAB 8 · FINANCE (LOCKED)                               -->
 <!-- ═══════════════════════════════════════════════════════ -->
 <div class="tab-pane" id="tab-finance">
-  <div class="lock-screen" id="lock-screen">
+  <div class="lock-screen" id="lock-screen" style="display: none;">
     <div class="lock-icon">🔒</div>
     <div class="lock-title">Private Finance Area</div>
     <div class="lock-sub">Enter the password to access budget &amp; payment tracking</div>
     <input class="pw-input" type="password" id="pw-input" placeholder="••••••••••" onkeydown="if(event.key===&#39;Enter&#39;)checkPw()">
-    <div class="pw-err" id="pw-err">Incorrect password. Try again.</div>
+    <div class="pw-err" id="pw-err" style="display: none;">Incorrect password. Try again.</div>
     <button class="btn" onclick="checkPw()">🔓 Unlock</button>
   </div>
-  <div class="finance-content" id="finance-content">
+  <div class="finance-content unlocked" id="finance-content">
 
     <!-- Cost Breakdown Summary -->
     <div class="card" style="padding:0;overflow:hidden;margin-bottom:0;">
@@ -1357,11 +1356,25 @@ body{font-family:'Lato',sans-serif;background:var(--cream);color:var(--text);min
       <th style="padding:7px 10px;text-align:right;">Balance</th>
       <th style="padding:7px 10px;text-align:center;">Status</th>
     </tr></thead>
-    <tbody><tr style="background:var(--purple);color:#fff;font-weight:700;">
+    <tbody><tr style="background:var(--purple-light);">
+        <td style="padding:7px 10px;font-weight:600;">Venue</td>
+        <td style="padding:7px 10px;font-size:.82em;color:var(--text-light);">Booking deposit</td>
+        <td style="padding:7px 10px;text-align:right;">$1,000.00</td>
+        <td style="padding:7px 10px;text-align:right;color:var(--success);">—</td>
+        <td style="padding:7px 10px;text-align:right;color:var(--warning);">$1,000.00</td>
+        <td style="padding:7px 10px;text-align:center;"></td>
+      </tr><tr style="">
+        <td style="padding:7px 10px;font-weight:600;">Venue</td>
+        <td style="padding:7px 10px;font-size:.82em;color:var(--text-light);">Payment 2</td>
+        <td style="padding:7px 10px;text-align:right;">$3.00</td>
+        <td style="padding:7px 10px;text-align:right;color:var(--success);">—</td>
+        <td style="padding:7px 10px;text-align:right;color:var(--warning);">$3.00</td>
+        <td style="padding:7px 10px;text-align:center;"></td>
+      </tr><tr style="background:var(--purple);color:#fff;font-weight:700;">
     <td colspan="2" style="padding:9px 10px;">TOTAL</td>
+    <td style="padding:9px 10px;text-align:right;">$1,003.00</td>
     <td style="padding:9px 10px;text-align:right;">$0.00</td>
-    <td style="padding:9px 10px;text-align:right;">$0.00</td>
-    <td style="padding:9px 10px;text-align:right;">$0.00</td>
+    <td style="padding:9px 10px;text-align:right;">$1,003.00</td>
     <td style="padding:9px 10px;"></td>
   </tr></tbody>
   </table></div>
@@ -1369,10 +1382,10 @@ body{font-family:'Lato',sans-serif;background:var(--cream);color:var(--text);min
 
     <!-- Budget Summary -->
     <div class="stats-grid">
-      <div class="stat o"><span class="stat-n" id="fin-total-budget">—</span><span class="stat-l">Total Budget</span></div>
-      <div class="stat p"><span class="stat-n" id="fin-committed">$0.00</span><span class="stat-l">Committed</span></div>
-      <div class="stat g"><span class="stat-n" id="fin-paid">$0.00</span><span class="stat-l">Total Paid</span></div>
-      <div class="stat"><span class="stat-n" id="fin-remaining">$0.00</span><span class="stat-l">Still Due</span></div>
+      <div class="stat o"><span class="stat-n" id="fin-total-budget">--</span><span class="stat-l">Total Budget</span></div>
+      <div class="stat p"><span class="stat-n" id="fin-committed">--</span><span class="stat-l">Committed</span></div>
+      <div class="stat g"><span class="stat-n" id="fin-paid">--</span><span class="stat-l">Total Paid</span></div>
+      <div class="stat"><span class="stat-n" id="fin-remaining">--</span><span class="stat-l">Still Due</span></div>
     </div>
 
     <!-- Budget Input -->
@@ -1380,7 +1393,7 @@ body{font-family:'Lato',sans-serif;background:var(--cream);color:var(--text);min
       <div class="card-title">💰 Total Budget</div>
       <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
         <label style="font-weight:700;color:var(--purple);">Overall Budget: $</label>
-        <input type="number" class="tbl-input" style="max-width:180px;" id="fin-budget-input" placeholder="Enter total budget..." onchange="saveFinance()">
+        <input type="number" class="tbl-input" style="max-width:180px;" id="fin-budget-input" placeholder="Enter total budget..." oninput="saveFinance()" onchange="saveFinance()">
         <span style="font-size:.85em;color:var(--text-light);">Venue total</span>
       </div>
     </div>
@@ -1398,7 +1411,7 @@ body{font-family:'Lato',sans-serif;background:var(--cream);color:var(--text);min
         <input class="tbl-input" value="Venue" placeholder="Vendor..." style="font-weight:700;margin-bottom:3px;" onchange="updatePayment(0,&#39;vendor&#39;,this.value)">
         <input class="tbl-input" value="Booking deposit" placeholder="Description..." style="font-size:.8em;" onchange="updatePayment(0,&#39;desc&#39;,this.value)">
       </div>
-      <div style="display:flex;align-items:center;gap:2px;"><span style="color:var(--text-light);font-size:.9em;">$</span><input type="text" class="tbl-input currency-input" value="" placeholder="0.00" style="min-width:80px;" onfocus="stripFmt(this)" onblur="applyFmt(this,0,&#39;amount&#39;)" onchange="updatePayment(0,&#39;amount&#39;,parseCurrency(this.value))"></div>
+      <div style="display:flex;align-items:center;gap:2px;"><span style="color:var(--text-light);font-size:.9em;">$</span><input type="text" class="tbl-input currency-input" value="1,000.00" placeholder="0.00" style="min-width:80px;" onfocus="stripFmt(this)" onblur="applyFmt(this,0,&#39;amount&#39;)" onchange="updatePayment(0,&#39;amount&#39;,parseCurrency(this.value))"></div>
       <div><input type="date" class="tbl-input" value="" onchange="updatePayment(0,&#39;due&#39;,this.value)"></div>
       <div style="display:flex;align-items:center;gap:2px;"><span style="color:var(--text-light);font-size:.9em;">$</span><input type="text" class="tbl-input currency-input" value="" placeholder="0.00" style="min-width:80px;" onfocus="stripFmt(this)" onblur="applyFmt(this,0,&#39;paid&#39;)" onchange="updatePayment(0,&#39;paid&#39;,parseCurrency(this.value))"></div>
       <div><select class="tbl-select" onchange="updatePayment(0,&#39;method&#39;,this.value)">
@@ -1412,7 +1425,7 @@ body{font-family:'Lato',sans-serif;background:var(--cream);color:var(--text);min
         <input class="tbl-input" value="Venue" placeholder="Vendor..." style="font-weight:700;margin-bottom:3px;" onchange="updatePayment(1,&#39;vendor&#39;,this.value)">
         <input class="tbl-input" value="Payment 2" placeholder="Description..." style="font-size:.8em;" onchange="updatePayment(1,&#39;desc&#39;,this.value)">
       </div>
-      <div style="display:flex;align-items:center;gap:2px;"><span style="color:var(--text-light);font-size:.9em;">$</span><input type="text" class="tbl-input currency-input" value="" placeholder="0.00" style="min-width:80px;" onfocus="stripFmt(this)" onblur="applyFmt(this,1,&#39;amount&#39;)" onchange="updatePayment(1,&#39;amount&#39;,parseCurrency(this.value))"></div>
+      <div style="display:flex;align-items:center;gap:2px;"><span style="color:var(--text-light);font-size:.9em;">$</span><input type="text" class="tbl-input currency-input" value="3.00" placeholder="0.00" style="min-width:80px;" onfocus="stripFmt(this)" onblur="applyFmt(this,1,&#39;amount&#39;)" onchange="updatePayment(1,&#39;amount&#39;,parseCurrency(this.value))"></div>
       <div><input type="date" class="tbl-input" value="" onchange="updatePayment(1,&#39;due&#39;,this.value)"></div>
       <div style="display:flex;align-items:center;gap:2px;"><span style="color:var(--text-light);font-size:.9em;">$</span><input type="text" class="tbl-input currency-input" value="" placeholder="0.00" style="min-width:80px;" onfocus="stripFmt(this)" onblur="applyFmt(this,1,&#39;paid&#39;)" onchange="updatePayment(1,&#39;paid&#39;,parseCurrency(this.value))"></div>
       <div><select class="tbl-select" onchange="updatePayment(1,&#39;method&#39;,this.value)">
@@ -1806,9 +1819,11 @@ function pushShared() {
 // Push finance data to Firestore
 function pushFinance() {
   if (!cloudSyncEnabled) return;
+  const data = localStorage.getItem('we_finance') || '';
   FINANCE_DOC.set({
-    ma_finance: localStorage.getItem('we_finance') || '',
-    ma_fv: localStorage.getItem('we_fv') || '2',
+    we_finance: data,
+    ma_finance: data,
+    we_fv: '2',
     _tab: MY_TAB
   }).catch(e => console.warn('Finance sync err:', e));
 }
@@ -1816,7 +1831,11 @@ function pushFinance() {
 // Apply cloud doc fields back into localStorage
 function applyCloudData(data) {
   Object.keys(data).forEach(k => {
-    if (k.startsWith('ma_') && data[k] != null) localStorage.setItem(k, data[k]);
+    if ((k.startsWith('ma_') || k.startsWith('we_')) && data[k] != null) {
+      localStorage.setItem(k, data[k]);
+    }
+    // Also handle old ma_finance key from cloud, map it to we_finance
+    if (k === 'ma_finance' && data[k]) localStorage.setItem('we_finance', data[k]);
   });
 }
 
@@ -1846,6 +1865,9 @@ function setupCloudListeners() {
     if (!snap.exists) return;
     const d = snap.data();
     if (d._tab === MY_TAB) return;
+    const finUnlocked = document.getElementById('finance-content') &&
+                        document.getElementById('finance-content').classList.contains('unlocked');
+    if (finUnlocked) return;
     applyCloudData(d);
     refreshFinance();
   }, e => console.warn('Finance listener err:', e));
@@ -1862,7 +1884,7 @@ function showTab(name) {
 
 // ── COUNTDOWN TIMER ───────────────────────────────────────
 function updateCountdown() {
-  const wedding = new Date('2027-05-01T17:00:00');
+  const wedding = new Date('2027-05-22T16:00:00');
   const now = new Date();
   const diff = wedding - now;
   if (diff <= 0) {
@@ -1885,7 +1907,7 @@ setInterval(updateCountdown, 1000);
 function checkPw() {
   const val = document.getElementById('pw-input').value;
   const err = document.getElementById('pw-err');
-  if (val === 'MrNut') {
+  if (val === 'OxFarm') {
     document.getElementById('lock-screen').style.display = 'none';
     document.getElementById('finance-content').classList.add('unlocked');
     sessionStorage.setItem('we_fin_unlocked', '1');
@@ -2291,25 +2313,29 @@ let finNotes = '';
 const FIN_VER = 2; // bump to reset finance defaults
 
 function loadFinance() {
-  const savedFinVer = localStorage.getItem('we_fv');
-  const s = savedFinVer == FIN_VER ? localStorage.getItem('we_finance') : null;
-  if (savedFinVer != FIN_VER) {
-    localStorage.setItem('we_fv', FIN_VER);
-    localStorage.removeItem('we_finance');
+  const raw = localStorage.getItem('we_finance');
+  if (raw) {
+    try {
+      const d = JSON.parse(raw);
+      payments  = Array.isArray(d.payments) ? d.payments : DEFAULT_PAYMENTS.map(p=>({...p}));
+      finBudget = parseFloat(d.budget) || 0;
+      finNotes  = d.notes || '';
+    } catch(e) {
+      payments = DEFAULT_PAYMENTS.map(p=>({...p}));
+    }
+  } else {
+    payments = DEFAULT_PAYMENTS.map(p=>({...p}));
   }
-  if (s) {
-    try { const d = JSON.parse(s); payments = d.payments || DEFAULT_PAYMENTS.map(p=>({...p})); finBudget = d.budget||0; finNotes = d.notes||''; }
-    catch(e) { payments = DEFAULT_PAYMENTS.map(p=>({...p})); }
-  } else { payments = DEFAULT_PAYMENTS.map(p=>({...p})); }
 }
 
 function saveFinance() {
   const budgetEl = document.getElementById('fin-budget-input');
-  if (budgetEl) finBudget = +budgetEl.value || 0;
+  if (budgetEl && budgetEl.value !== '') finBudget = parseFloat(budgetEl.value) || 0;
   const notesEl = document.getElementById('fin-notes');
   if (notesEl) finNotes = notesEl.value;
   localStorage.setItem('we_finance', JSON.stringify({payments, budget:finBudget, notes:finNotes}));
-  renderFinanceSummary(); pushFinance();
+  renderFinanceSummary();
+  setTimeout(pushFinance, 200);
 }
 
 function renderFinanceSummary() {
@@ -2326,14 +2352,15 @@ function renderFinanceSummary() {
   const extraGuestCost  = extraGuests * 85;
   const grandTotal      = committed + extraGuestCost;
 
-  setText('fin-total-budget', finBudget ? fmt(finBudget) : '—');
-  setText('fin-committed', fmt(committed));
-  setText('fin-paid', fmt(paid));
-  setText('fin-remaining', fmt(remaining));
+  const _s = (id,v) => { const e=document.getElementById(id); if(e) e.textContent=v; };
+  _s('fin-total-budget', finBudget > 0 ? fmt(finBudget) : '—');
+  _s('fin-committed', fmt(committed));
+  _s('fin-paid', fmt(paid));
+  _s('fin-remaining', fmt(remaining));
   const bEl = document.getElementById('fin-budget-input');
-  if (bEl && finBudget) bEl.value = finBudget;
+  if (bEl && finBudget > 0 && !bEl.value) bEl.value = finBudget;
   const nEl = document.getElementById('fin-notes');
-  if (nEl && finNotes) nEl.value = finNotes;
+  if (nEl && finNotes && !nEl.value) nEl.value = finNotes;
 
   // Build cost breakdown table
   const tbl = document.getElementById('fin-breakdown-table');
@@ -2445,7 +2472,8 @@ function addPaymentRow() {
 // ═══════════════════════════════════════════════════════════
 function updateDashboard() {
   // Days
-  const diff = new Date('2027-05-22') - new Date();
+  const wedding = new Date('2027-05-22T16:00:00');
+  const diff = wedding - new Date();
   const days = Math.max(0, Math.floor(diff/86400000));
   setText('ds-days', days);
 
@@ -2812,7 +2840,14 @@ async function init() {
       cloudWasEmpty = true;
       setSyncStatus('☁️ Connected');
     }
-    if (finSnap.exists) applyCloudData(finSnap.data());
+    if (finSnap.exists) {
+      applyCloudData(finSnap.data());
+      // Migrate old ma_finance key to we_finance if we_finance not yet set
+      const d = finSnap.data();
+      if (!localStorage.getItem('we_finance') && d.ma_finance) {
+        localStorage.setItem('we_finance', d.ma_finance);
+      }
+    }
   } catch(e) {
     console.warn('Cloud unavailable, using local data:', e);
     setSyncStatus('⚠️ Offline — using local data');
@@ -2828,6 +2863,7 @@ async function init() {
   renderGuests();
   renderChecklist();
   renderPayments();
+  renderFinanceSummary();
   renderHotelTasks();
   loadVenueDecisions();
   loadPkgToggles();
@@ -2853,4 +2889,4 @@ init();
 </script>
 
 
-</body></html>
+<div class="calendly-frame-tag" manager_id="b034aaa1-b5ec-458a-a428-deb82494bf8f" id="b034aaa1-b5ec-458a-a428-deb82494bf8f" style="height: 0px; width: 0px; visibility: hidden;"></div><div class="calendly-lifecycle-optibutton_singleton"><template shadowrootmode="closed"><div class="calendly-opti-root"></div></template></div></body></html>
